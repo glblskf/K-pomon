@@ -52,10 +52,10 @@ namespace Pokemonbonus
             this.life -= damage;
         }
 
-        public bool isKO
+        public bool IsKO
         {
-            get { return isKO; }
-            set { isKO = value; }
+            get { return IsKO; }
+            set { IsKO = value; }
         }
 
         public void Heal(int life)

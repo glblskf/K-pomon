@@ -8,6 +8,7 @@ namespace Pokemonbonus
         private string name;
         private int age;
         private List<Pokemon> mypokemon = new List<Pokemon>();
+        private int Selected = 0;
 
         public Trainer(string name, int age)
             : base(name)
@@ -65,6 +66,26 @@ namespace Pokemonbonus
                 if (pokemon.IsKO) return false;
             }
             return true;
+        }
+
+        public void Select()
+        {
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Choose a pokemon");
+                foreach (var pokemon in mypokemon)
+                {
+                    Console.Write(" - {0}", pokemon.Name); 
+                    pokemon.Describe();
+                }
+                Selected = int.Parse(Console.ReadLine());
+            } while (Selected < 0 || Selected >= mypokemon.Count);
+        }
+
+        public Pokemon GetSelectedPokemon()
+        {
+            return mypokemon[Selected];
         }
     }
 }
