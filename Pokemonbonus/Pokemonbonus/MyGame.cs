@@ -91,7 +91,7 @@ namespace Pokemonbonus
         public static void Welcome()
         {
             System.Media.SoundPlayer Music = new SoundPlayer();
-            Music.SoundLocation = Directory.GetCurrentDirectory() + @"\music.MP3";
+            Music.SoundLocation = Directory.GetCurrentDirectory() + @"\music.wav";
             Music.PlayLooping();
         }
     }

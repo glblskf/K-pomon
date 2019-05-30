@@ -195,9 +195,9 @@ namespace Pokemonbonus
             pokeName.Add("Rattata");
         }
 
-        public static Pokemon GetPokemon(int Index)
+        /*public static Pokemon GetPokemon(int Index)
         {
-            return new Pokemon(pokeName[Index],);
-        }
+            //return new Pokemon(pokeName[Index]);
+        }*/
     }
 }
