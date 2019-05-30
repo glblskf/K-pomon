@@ -7,17 +7,17 @@ namespace Pokemonbonus
         public static void MainMenu()
         {
             Console.WriteLine(@"""                                  ,'\
-     _.----.        ____         ,'  _\   ___    ___     ____
- _,-'       `.     |    |  /`.   \,-'    |   \  /   |   |    \  |`.
- \      __    \    '-.  | /   `.  ___    |    \/    |   '-.   \ |  |
- \.    \ \   |  __  |  |/    ,','_  `.  |          | __  |    \|  |
- \    \/   /,' _`.|      ,' / / / /   |          ,' _`.|     |  |
- \     ,-'/  /   \    ,'   | \/ / ,`.|         /  /   \  |     |
- \    \ |   \_/  |   `-.  \    `'  /|  |    ||   \_/  | |\    |
- \    \ \      /       `-.`.___,-' |  |\  /| \      /  | |   |
- \    \ `.__,'|  |`-._    `|      |__| \/ |  `.__,'|  | |   |
- \_.-'       |__|    `-._ |              '-.|     '-.| |   |
-                         `'                            '-._|""");
+                                _.----.        ____         ,'  _\   ___    ___     ____
+                            _,-'       `.     |    |  /`.   \,-'    |   \  /   |   |    \  |`.
+                            \      __    \    '-.  | /   `.  ___    |    \/    |   '-.   \ |  |
+                            \.    \ \   |  __  |  |/    ,','_  `.  |          | __  |    \|  |
+                            \    \/   /,' _`.|      ,' / / / /   |          ,' _`.|     |  |
+                            \     ,-'/  /   \    ,'   | \/ / ,`.|         /  /   \  |     |
+                            \    \ |   \_/  |   `-.  \    `'  /|  |    ||   \_/  | |\    |
+                            \    \ \      /       `-.`.___,-' |  |\  /| \      /  | |   |
+                            \    \ `.__,'|  |`-._    `|      |__| \/ |  `.__,'|  | |   |
+                             \_.-'       |__|    `-._ |              '-.|     '-.| |   |
+                                                    `'                             '-._|""");
             Console.ReadLine();
         }
         
@@ -53,8 +53,15 @@ namespace Pokemonbonus
         public static Action GetNextAction()
         {
             Console.Clear();
-            Console.WriteLine("What do you want to do ?");
-            Console.WriteLine("| fight: 1 | Shop 2 | my stats: 3 | option: 4 |");
+            Console.WriteLine();
+            Console.WriteLine(               "                 ****************************************************************");
+            Console.WriteLine(               "                 *                  What do you want to do ?                    *");
+            Console.WriteLine(               "                 *                                                              *");
+            Console.WriteLine(               "                 *         | fight: 1 | Shop 2 | my stats: 3 | option: 4 |      *");
+            Console.WriteLine(               "                 *                                                              *");
+            Console.WriteLine(               "                 ****************************************************************");
+            
+            Console.Write(                   "      > ");
 
             string read1 = Console.ReadLine();
             switch (read1)
@@ -75,7 +82,15 @@ namespace Pokemonbonus
         public static Option GetOption()
         {
             Console.Clear();
-            Console.WriteLine("|Quit: 1 | Pause : 2 | restart : 3| HomePage : 10|");
+            Console.WriteLine();
+            Console.WriteLine(               "                 ****************************************************************");
+            Console.WriteLine(               "                 *                          Menu Option                         *");
+            Console.WriteLine(               "                 *                                                              *");
+            Console.WriteLine(               "                 *      |Quit: 1 | Pause : 2 | restart : 3| HomePage : 10|      *");
+            Console.WriteLine(               "                 *                                                              *");
+            Console.WriteLine(               "                 ****************************************************************");
+            
+            Console.Write(                   "      > ");
             string read2 = Console.ReadLine();
             switch (read2)
             {
@@ -95,7 +110,15 @@ namespace Pokemonbonus
         public static Stat GetStat()
         {
             Console.Clear();
-            Console.WriteLine("|MyID : 1 | MyPokemon : 2 | Homepage : 10|");
+            Console.WriteLine();
+            Console.WriteLine(               "                 ****************************************************************");
+            Console.WriteLine(               "                 *                           Statistics                         *");
+            Console.WriteLine(               "                 *                                                              *");
+            Console.WriteLine(               "                 *           | MyID : 1 | MyPokemon : 2 | Homepage : 10 |       *");
+            Console.WriteLine(               "                 *                                                              *");
+            Console.WriteLine(               "                 ****************************************************************");
+
+            Console.Write(                   "      > ");
             string read3 = Console.ReadLine();
             switch (read3)
             {
@@ -113,7 +136,15 @@ namespace Pokemonbonus
         public static Shop Getshop()
         {
             Console.Clear();
-            Console.WriteLine("|buy pokeball : 1 | Homepage : 10 | ");
+            Console.WriteLine();
+            Console.WriteLine(               "                 ****************************************************************");
+            Console.WriteLine(               "                 *                             *SHOP*                           *");
+            Console.WriteLine(               "                 *                                                              *");
+            Console.WriteLine(               "                 *             | buy Pokeball : 1 | Homepage : 10 |             *");
+            Console.WriteLine(               "                 *                                                              *");
+            Console.WriteLine(               "                 ****************************************************************");
+            
+            Console.Write(                   "      > ");
             string read4 = Console.ReadLine();
             switch (read4)
             {

@@ -24,7 +24,8 @@ namespace Pokemonbonus
 
         public static void Describe()
         {
-            Console.WriteLine("My name is {0}, I'm {1} and have {2} Pokemon !", _name, _age, _pokemons.Count);
+            Console.WriteLine();
+            Console.WriteLine("My name is {0}, I'm {1} and have {2} Pokemon !", _name, _age, NumberOfPokemon());
         }
 
         public static int Age
@@ -51,7 +52,8 @@ namespace Pokemonbonus
         public static void MyPokemon()
         {
             int i = 0;
-            Console.WriteLine("My pokemon are :");
+            Console.WriteLine();
+            Console.WriteLine("      My pokemon are :");
             while (i < _pokemons.Count)
             {
                 Console.WriteLine("- {0}", _pokemons[i]);
