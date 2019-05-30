@@ -16,7 +16,7 @@ namespace Pokemonbonus
         private static List<string> pokeName;
         public Index()
         {
-            List<Dictionary<string, int>> pokeStat = new List<Dictionary<string, int>>();   
+            pokeStat = new List<Dictionary<string, int>>();   
             pokeStat.Add(new Dictionary<string, int>(){{HP, 45}, {ATK, 49}, {DEF, 49}, {VIT, 45}, {SPE, 65}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 45}, {ATK, 62}, {DEF, 63}, {VIT, 60}, {SPE, 80}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 80}, {ATK, 83}, {DEF, 83}, {VIT, 80}, {SPE, 100}});
@@ -169,9 +169,8 @@ namespace Pokemonbonus
             pokeStat.Add(new Dictionary<string, int>(){{HP, 106}, {ATK, 110}, {DEF, 90}, {VIT, 80}, {SPE, 154}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 100}, {ATK, 100}, {DEF, 100}, {VIT, 130}, {SPE, 100}});
 
-            
-            
-            List<string> pokeName = new List<string>();
+
+            pokeName = new List<string>();
             pokeName.Add("Bulbasaur");
             pokeName.Add("Ivysaur");
             pokeName.Add("Venusaur");
@@ -253,12 +252,85 @@ namespace Pokemonbonus
             pokeName.Add("Slowpoke");
             pokeName.Add("Slowbro");
             pokeName.Add("Magnemite");
-
+            pokeName.Add("Magneton");
+            pokeName.Add("Farfetch'd");
+            pokeName.Add("Doduo");
+            pokeName.Add("Dodrio");
+            pokeName.Add("Seel");
+            pokeName.Add("Dewgong");
+            pokeName.Add("Grimer");
+            pokeName.Add("Muk");
+            pokeName.Add("Shellder");
+            pokeName.Add("Cloyster");
+            pokeName.Add("Gastly");
+            pokeName.Add("Haunter");
+            pokeName.Add("Gengar");
+            pokeName.Add("Onix");
+            pokeName.Add("Drowzee");
+            pokeName.Add("Hypno");
+            pokeName.Add("Krabby");
+            pokeName.Add("Kingler");
+            pokeName.Add("Voltorb");
+            pokeName.Add("Electrode");
+            pokeName.Add("Exeggcute");
+            pokeName.Add("Exeggutor");
+            pokeName.Add("Cubone");
+            pokeName.Add("Marowak");
+            pokeName.Add("Hitmonlee");
+            pokeName.Add("Hitmonchan");
+            pokeName.Add("Licktung");
+            pokeName.Add("Koffing");
+            pokeName.Add("Weezing");
+            pokeName.Add("Rhyhorn");
+            pokeName.Add("Rhydon");
+            pokeName.Add("Chansey");
+            pokeName.Add("Tangela");
+            pokeName.Add("Kangaskhan");
+            pokeName.Add("Horsea");
+            pokeName.Add("Seadra");
+            pokeName.Add("Goldeen");
+            pokeName.Add("Seaking");
+            pokeName.Add("Staryu");
+            pokeName.Add("Starmie");
+            pokeName.Add("Mr.Mime");
+            pokeName.Add("Scyther");
+            pokeName.Add("Jynx");
+            pokeName.Add("Electabuzz");
+            pokeName.Add("Magmar");
+            pokeName.Add("Pinsir");
+            pokeName.Add("Tauros");
+            pokeName.Add("Magikarp");
+            pokeName.Add("Gyarados");
+            pokeName.Add("Lapras");
+            pokeName.Add("Ditto");
+            pokeName.Add("Eevee");
+            pokeName.Add("Vaporeon");
+            pokeName.Add("Jolteon");
+            pokeName.Add("Flareon");
+            pokeName.Add("Porygon");
+            pokeName.Add("Omanyte");
+            pokeName.Add("Omastar");
+            pokeName.Add("Kabuto");
+            pokeName.Add("Kabutops");
+            pokeName.Add("Areodactyl");
+            pokeName.Add("Snorlax");
+            pokeName.Add("Articuno");
+            pokeName.Add("Zapdos");
+            pokeName.Add("Moltres");
+            pokeName.Add("Dratini");
+            pokeName.Add("Dragonair");
+            pokeName.Add("Dragonite");
+            pokeName.Add("Mewtow");
+            pokeName.Add("Mew");
         }
 
         public static Pokemon GetPokemon(int i)
         {
-            return new Pokemon(pokeName[i], pokeStat[i], new List<Attack.Poketype>() {Attack.Poketype.NORMAL}, new List<Attack>());
+            string name = pokeName[i];
+            Dictionary<string, int> stat = pokeStat[i];
+            List<Attack.Poketype> types = new List<Attack.Poketype>();
+            List<Attack> atks = new List<Attack>();
+            return new Pokemon(name, stat, types, atks);
         }
     }
 }
