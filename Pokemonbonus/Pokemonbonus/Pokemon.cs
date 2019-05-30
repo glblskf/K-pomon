@@ -1,30 +1,40 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Pokemonbonus
 {
 
     public class Pokemon : Animal
     {
-        
-        private Attack.Poketype _type;
+
+        private List<Attack.Poketype> _type;
         private string _name;
-        private int _damage;
         private int _level;
-        private bool _isKO;
+        private bool _isKO = false;
+        
         private int _maxLife;
         private int _life;
+        private int _force;
+        private int _defence;
+        private int _vitesse;
+        private int _special;
+        
+        private List<Attack> _attacks;
 
-        public Pokemon(string name, int life, int damage, Attack.Poketype type)
+        public Pokemon(string name, Dictionary<string, int> stat, List<Attack.Poketype> type, List<Attack> attacks)
             : base(name)
         {
             _name = name;
-            _maxLife = life;
-            _life = life;
+            _maxLife = stat["PV"];
+            _life = stat["PV"];
+            _force = stat["FORCE"];
+            _defence = stat["DEFENCE"];
+            _vitesse = stat["VITESSE"];
+            _special = stat["SPECIAL"];
             _type = type;
+            _attacks = attacks;
             _level = 1;
-            _isKO = false;
-            _damage = damage;
         }
 
         public void WhoAmI()
@@ -56,6 +66,10 @@ namespace Pokemonbonus
         public void Heal(int life)
         {
             _life = life;
+            if (_life > _maxLife)
+            {
+                _life = _maxLife;
+            }
         }
 
         public int Life
@@ -63,12 +77,5 @@ namespace Pokemonbonus
             get { return _life; }
             set { _life = value; }
         }
-
-        public int Attack()
-        {
-            Console.WriteLine("{0} uses cut, it's super effective", _name);
-            return _damage;
-        }
     }
-
 }

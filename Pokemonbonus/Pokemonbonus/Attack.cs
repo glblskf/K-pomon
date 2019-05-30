@@ -40,6 +40,21 @@ namespace Pokemonbonus
             DRAGON
         }
 
+        public int GetDamage(Pokemon attacker, Pokemon defendant)
+        {
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
         public float GetMultiplier(Poketype enemyType)
         {
             switch (_attackType) // Attack Type

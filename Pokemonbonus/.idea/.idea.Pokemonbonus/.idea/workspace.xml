@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62ca7216-b6b0-4efc-8f6d-bddc6bf3f683" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pokemonbonus/Attack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pokemonbonus/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pokemonbonus/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pokemonbonus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pokemonbonus/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemonbonus/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemonbonus/Attack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemonbonus/Pokemon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemonbonus/Pokemon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemonbonus/Pokemonbonus.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemonbonus/Pokemonbonus.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemonbonus/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemonbonus/Program.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,13 +17,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pokemonbonus/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="165">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding>
-                <marker date="1559212868646" expanded="true" signature="6:54" ph="..." />
-                <marker date="1559212868646" expanded="true" signature="78:311" ph="{...}" />
-                <marker date="1559212868646" expanded="true" signature="105:309" ph="{...}" />
-                <marker date="1559212868646" expanded="true" signature="152:305" ph="{...}" />
+                <marker date="1559213321947" expanded="false" signature="6:54" ph="..." />
+                <marker date="1559213321947" expanded="true" signature="78:313" ph="{...}" />
+                <marker date="1559213321947" expanded="true" signature="105:311" ph="{...}" />
+                <marker date="1559213321947" expanded="true" signature="152:305" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -35,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pokemonbonus/Trainer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+            <state relative-caret-position="1125">
+              <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
               <folding>
                 <marker date="1559177585477" expanded="false" signature="6:47" ph="..." />
                 <marker date="1559177585477" expanded="true" signature="71:2131" ph="{...}" />
@@ -60,57 +57,58 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pokemonbonus/Pokemon.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="330">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
-                <marker date="1559181864803" expanded="false" signature="6:47" ph="..." />
-                <marker date="1559181864803" expanded="true" signature="71:1553" ph="{...}" />
-                <marker date="1559181864803" expanded="true" signature="108:1550" ph="{...}" />
-                <marker date="1559181864803" expanded="true" signature="440:648" ph="{...}" />
-                <marker date="1559181864803" expanded="true" signature="678:750" ph="{...}" />
-                <marker date="1559181864803" expanded="true" signature="782:917" ph="{...}" />
-                <marker date="1559181864803" expanded="true" signature="948:990" ph="{...}" />
-                <marker date="1559181864803" expanded="true" signature="1031:1080" ph="{...}" />
-                <marker date="1559181864803" expanded="true" signature="1106:1195" ph="{...}" />
-                <marker date="1559181864803" expanded="true" signature="1231:1277" ph="{...}" />
-                <marker date="1559181864803" expanded="true" signature="1302:1391" ph="{...}" />
-                <marker date="1559181864803" expanded="true" signature="1420:1544" ph="{...}" />
+                <marker date="1559217022198" expanded="false" signature="6:73" ph="..." />
+                <marker date="1559217022198" expanded="true" signature="97:1852" ph="{...}" />
+                <marker date="1559217022198" expanded="true" signature="134:1850" ph="{...}" />
+                <marker date="1559217022198" expanded="true" signature="654:1005" ph="{...}" />
+                <marker date="1559217022198" expanded="true" signature="1035:1107" ph="{...}" />
+                <marker date="1559217022198" expanded="true" signature="1139:1274" ph="{...}" />
+                <marker date="1559217022198" expanded="true" signature="1305:1347" ph="{...}" />
+                <marker date="1559217022198" expanded="true" signature="1388:1437" ph="{...}" />
+                <marker date="1559217022198" expanded="true" signature="1463:1552" ph="{...}" />
+                <marker date="1559217022198" expanded="true" signature="1588:1730" ph="{...}" />
+                <marker date="1559217022198" expanded="true" signature="1658:1720" ph="{...}" />
+                <marker date="1559217022198" expanded="true" signature="1755:1844" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pokemonbonus/Attack.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="193" column="51" selection-start-line="193" selection-start-column="51" selection-end-line="193" selection-end-column="51" />
+            <state relative-caret-position="188">
+              <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
               <folding>
-                <marker date="1559213109245" expanded="true" signature="6:207" ph="..." />
-                <marker date="1559213109245" expanded="true" signature="231:8036" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="257:8034" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="445:569" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="599:906" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="962:8028" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="1020:8018" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="1111:1397" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="1471:2010" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="2084:2452" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="2529:2897" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="2976:3408" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="3484:3852" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="3929:4470" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="4547:4924" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="4998:5457" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="5531:5889" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="5963:6269" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="6348:6805" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="6881:7251" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="7329:7634" ph="{...}" />
-                <marker date="1559213109245" expanded="true" signature="7711:7910" ph="{...}" />
+                <marker date="1559217193546" expanded="false" signature="6:207" ph="..." />
+                <marker date="1559217193546" expanded="true" signature="231:8226" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="257:8224" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="445:569" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="599:906" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="973:1006" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="1152:8218" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="1210:8208" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="1301:1587" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="1661:2200" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="2274:2642" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="2719:3087" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="3166:3598" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="3674:4042" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="4119:4660" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="4737:5114" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="5188:5647" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="5721:6079" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="6153:6459" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="6538:6995" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="7071:7441" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="7519:7824" ph="{...}" />
+                <marker date="1559217193546" expanded="true" signature="7901:8100" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -119,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pokemonbonus/Animal.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="405">
+              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
               <folding>
                 <marker date="1559177035026" expanded="true" signature="37:589" ph="{...}" />
                 <marker date="1559177035026" expanded="true" signature="63:587" ph="{...}" />
@@ -137,7 +135,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pokemonbonus/Menu.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="105">
               <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
                 <marker date="1559177696084" expanded="true" signature="37:3712" ph="{...}" />
@@ -163,7 +161,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pokemonbonus/MyGame.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="1215">
               <caret line="84" column="9" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
               <folding>
                 <marker date="1559177523842" expanded="false" signature="6:32" ph="..." />
@@ -201,9 +199,9 @@
         <option value="$PROJECT_DIR$/Pokemonbonus/MyGame.cs" />
         <option value="$PROJECT_DIR$/Pokemonbonus/Trainer.cs" />
         <option value="$PROJECT_DIR$/Pokemonbonus/Menu.cs" />
-        <option value="$PROJECT_DIR$/Pokemonbonus/Pokemon.cs" />
         <option value="$PROJECT_DIR$/Pokemonbonus/Program.cs" />
         <option value="$PROJECT_DIR$/Pokemonbonus/Attack.cs" />
+        <option value="$PROJECT_DIR$/Pokemonbonus/Pokemon.cs" />
       </list>
     </option>
   </component>
@@ -218,11 +216,12 @@
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <autoscrollFromSource SolutionExplorer="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -294,7 +293,8 @@
       <workItem from="1559138982621" duration="13000" />
       <workItem from="1559140921112" duration="3599000" />
       <workItem from="1559144770317" duration="2448000" />
-      <workItem from="1559176596868" duration="6635000" />
+      <workItem from="1559176596868" duration="7809000" />
+      <workItem from="1559215654525" duration="1538000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed past mistakes">
       <created>1559177899165</created>
@@ -307,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12695000" />
+    <option name="totallyTimeSpent" value="15407000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,15 +322,14 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1277027" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12972973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2752976" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1875" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39880952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -343,13 +342,14 @@
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="14" weight="0.32738096" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="bottom" id="Performance Profiler" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,39 +370,39 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Pokemonbonus/Attack.cs</url>
-          <line>74</line>
+          <line>89</line>
           <properties documentPath="$PROJECT_DIR$/Pokemonbonus/Attack.cs" initialLine="74">
             <startOffsets>
-              <option value="2350" />
+              <option value="2540" />
             </startOffsets>
             <endOffsets>
-              <option value="2359" />
+              <option value="2549" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Pokemonbonus/Attack.cs</url>
-          <line>72</line>
+          <line>87</line>
           <properties documentPath="$PROJECT_DIR$/Pokemonbonus/Attack.cs" initialLine="72">
             <startOffsets>
-              <option value="2224" />
+              <option value="2414" />
             </startOffsets>
             <endOffsets>
-              <option value="2236" />
+              <option value="2426" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Pokemonbonus/Attack.cs</url>
-          <line>76</line>
+          <line>91</line>
           <properties documentPath="$PROJECT_DIR$/Pokemonbonus/Attack.cs" initialLine="76">
             <startOffsets>
-              <option value="2421" />
+              <option value="2611" />
             </startOffsets>
             <endOffsets>
-              <option value="2430" />
+              <option value="2620" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
@@ -411,28 +411,23 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Pokemonbonus/MyGame.cs">
+    <entry file="file://$PROJECT_DIR$/Pokemonbonus/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="84" column="9" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+        <state relative-caret-position="165">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
-            <marker date="1559177523842" expanded="false" signature="6:32" ph="..." />
-            <marker date="1559177523842" expanded="true" signature="56:2997" ph="{...}" />
-            <marker date="1559177523842" expanded="true" signature="82:2995" ph="{...}" />
-            <marker date="1559177523842" expanded="true" signature="125:2989" ph="{...}" />
-            <marker date="1559177523842" expanded="true" signature="192:2979" ph="{...}" />
-            <marker date="1559177523842" expanded="true" signature="300:2965" ph="{...}" />
-            <marker date="1559177523842" expanded="true" signature="593:901" ph="{...}" />
-            <marker date="1559177523842" expanded="true" signature="1102:1733" ph="{...}" />
-            <marker date="1559177523842" expanded="true" signature="1978:2781" ph="{...}" />
+            <marker date="1559213321947" expanded="false" signature="6:54" ph="..." />
+            <marker date="1559213321947" expanded="true" signature="78:313" ph="{...}" />
+            <marker date="1559213321947" expanded="true" signature="105:311" ph="{...}" />
+            <marker date="1559213321947" expanded="true" signature="152:305" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pokemonbonus/Trainer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+        <state relative-caret-position="1125">
+          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
           <folding>
             <marker date="1559177585477" expanded="false" signature="6:47" ph="..." />
             <marker date="1559177585477" expanded="true" signature="71:2131" ph="{...}" />
@@ -457,7 +452,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pokemonbonus/Menu.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="105">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <marker date="1559177696084" expanded="true" signature="37:3712" ph="{...}" />
@@ -479,10 +474,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Pokemonbonus/MyGame.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="84" column="9" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+          <folding>
+            <marker date="1559177523842" expanded="false" signature="6:32" ph="..." />
+            <marker date="1559177523842" expanded="true" signature="56:2997" ph="{...}" />
+            <marker date="1559177523842" expanded="true" signature="82:2995" ph="{...}" />
+            <marker date="1559177523842" expanded="true" signature="125:2989" ph="{...}" />
+            <marker date="1559177523842" expanded="true" signature="192:2979" ph="{...}" />
+            <marker date="1559177523842" expanded="true" signature="300:2965" ph="{...}" />
+            <marker date="1559177523842" expanded="true" signature="593:901" ph="{...}" />
+            <marker date="1559177523842" expanded="true" signature="1102:1733" ph="{...}" />
+            <marker date="1559177523842" expanded="true" signature="1978:2781" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Pokemonbonus/Animal.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        <state relative-caret-position="405">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
           <folding>
             <marker date="1559177035026" expanded="true" signature="37:589" ph="{...}" />
             <marker date="1559177035026" expanded="true" signature="63:587" ph="{...}" />
@@ -495,67 +508,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pokemonbonus/Pokemon.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <marker date="1559181864803" expanded="false" signature="6:47" ph="..." />
-            <marker date="1559181864803" expanded="true" signature="71:1553" ph="{...}" />
-            <marker date="1559181864803" expanded="true" signature="108:1550" ph="{...}" />
-            <marker date="1559181864803" expanded="true" signature="440:648" ph="{...}" />
-            <marker date="1559181864803" expanded="true" signature="678:750" ph="{...}" />
-            <marker date="1559181864803" expanded="true" signature="782:917" ph="{...}" />
-            <marker date="1559181864803" expanded="true" signature="948:990" ph="{...}" />
-            <marker date="1559181864803" expanded="true" signature="1031:1080" ph="{...}" />
-            <marker date="1559181864803" expanded="true" signature="1106:1195" ph="{...}" />
-            <marker date="1559181864803" expanded="true" signature="1231:1277" ph="{...}" />
-            <marker date="1559181864803" expanded="true" signature="1302:1391" ph="{...}" />
-            <marker date="1559181864803" expanded="true" signature="1420:1544" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pokemonbonus/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <marker date="1559212868646" expanded="true" signature="6:54" ph="..." />
-            <marker date="1559212868646" expanded="true" signature="78:311" ph="{...}" />
-            <marker date="1559212868646" expanded="true" signature="105:309" ph="{...}" />
-            <marker date="1559212868646" expanded="true" signature="152:305" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pokemonbonus/Attack.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="193" column="51" selection-start-line="193" selection-start-column="51" selection-end-line="193" selection-end-column="51" />
+        <state relative-caret-position="188">
+          <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
           <folding>
-            <marker date="1559213109245" expanded="true" signature="6:207" ph="..." />
-            <marker date="1559213109245" expanded="true" signature="231:8036" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="257:8034" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="445:569" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="599:906" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="962:8028" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="1020:8018" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="1111:1397" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="1471:2010" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="2084:2452" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="2529:2897" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="2976:3408" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="3484:3852" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="3929:4470" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="4547:4924" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="4998:5457" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="5531:5889" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="5963:6269" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="6348:6805" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="6881:7251" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="7329:7634" ph="{...}" />
-            <marker date="1559213109245" expanded="true" signature="7711:7910" ph="{...}" />
+            <marker date="1559217193546" expanded="false" signature="6:207" ph="..." />
+            <marker date="1559217193546" expanded="true" signature="231:8226" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="257:8224" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="445:569" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="599:906" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="973:1006" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="1152:8218" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="1210:8208" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="1301:1587" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="1661:2200" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="2274:2642" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="2719:3087" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="3166:3598" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="3674:4042" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="4119:4660" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="4737:5114" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="5188:5647" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="5721:6079" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="6153:6459" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="6538:6995" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="7071:7441" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="7519:7824" ph="{...}" />
+            <marker date="1559217193546" expanded="true" signature="7901:8100" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pokemonbonus/Pokemon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <marker date="1559217022198" expanded="false" signature="6:73" ph="..." />
+            <marker date="1559217022198" expanded="true" signature="97:1852" ph="{...}" />
+            <marker date="1559217022198" expanded="true" signature="134:1850" ph="{...}" />
+            <marker date="1559217022198" expanded="true" signature="654:1005" ph="{...}" />
+            <marker date="1559217022198" expanded="true" signature="1035:1107" ph="{...}" />
+            <marker date="1559217022198" expanded="true" signature="1139:1274" ph="{...}" />
+            <marker date="1559217022198" expanded="true" signature="1305:1347" ph="{...}" />
+            <marker date="1559217022198" expanded="true" signature="1388:1437" ph="{...}" />
+            <marker date="1559217022198" expanded="true" signature="1463:1552" ph="{...}" />
+            <marker date="1559217022198" expanded="true" signature="1588:1730" ph="{...}" />
+            <marker date="1559217022198" expanded="true" signature="1658:1720" ph="{...}" />
+            <marker date="1559217022198" expanded="true" signature="1755:1844" ph="{...}" />
           </folding>
         </state>
       </provider>
