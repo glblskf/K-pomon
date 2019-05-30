@@ -98,29 +98,31 @@ namespace Pokemonbonus
             Menu.MainMenu();
         }
 
-
+        public static string trainername;
+        
         public static Trainer Starter()
         {
 
             Trainer trainer1 = new Trainer("",0);
                 
-            Index newindex= Index; 
+            Index index = new Index(); 
             
             Console.WriteLine("Enter your name to start or exit:");
             Console.WriteLine("|Enter my name : 1");
             Console.WriteLine("|Exit : 2");
 
             string readme = Console.ReadLine();
-
+            
             switch (readme)
             {
                     case "1":
                         Console.Write(">");
                         string name = Console.ReadLine();
-                        Console.WriteLine("How old are you ?");
+                        Console.WriteLine("Nice to meet you {0} !, How old are you ?",name);
                         Console.Write(">");
                         int age = int.Parse(Console.ReadLine());
                         Trainer _trainer = new Trainer(name, age);
+                        trainername = name;
                         trainer1 = _trainer;
                         break;
                     case "2":
@@ -132,6 +134,25 @@ namespace Pokemonbonus
             }
 
             return trainer1;
+        }
+
+        public static void Getmyfirstpokemon()
+        {
+            Console.Clear();
+            Console.WriteLine("Hello there! Welcome to the world of pokémon! My name is Oak! People call me the pokémon Prof! This world is inhabited by creatures called pokémon! For some people, pokémon are pets. Others use them for fights. Myself...I study pokémon as a profession.");
+            Console.WriteLine("But first, tell me about yourself.");
+            Starter();
+            Console.WriteLine("This is my grandson, he's been yur rival since you both were babies.");
+            Console.WriteLine("....Erm, what was his name now ?");
+            Console.Write(">");
+            string rivalname = Console.ReadLine();
+            Console.WriteLine("That's right! I remember now !, his name is {0}!",rivalname);
+            Console.WriteLine("{0}!",trainername);
+            Console.WriteLine("Your very own PoKeMoN legend is about to unfold!");
+            Console.WriteLine("A world of dreams and adventures with PoKeMoN awaits! Let's go !");
+            
+            
+            
         }
       
     }
