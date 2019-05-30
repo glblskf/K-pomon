@@ -9,6 +9,7 @@ namespace Pokemonbonus
       Trainer red = new Trainer("Red", 10);
       Pokemon pichu = new Pokemon("pichu", 10, 1, Pokemon.Poketype.ELECTRIK);
       
+      Menu.MainMenu();
       MyGame.Updates();
     }
   }

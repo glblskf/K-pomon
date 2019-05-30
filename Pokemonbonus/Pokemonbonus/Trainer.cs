@@ -45,23 +45,23 @@ namespace Pokemonbonus
 
         public void CatchAPokemon(Pokemon pokemon)
         {
-            mypokemon.Add(pokemon);
+            _pokemons.Add(pokemon);
         }
 
         public void MyPokemon()
         {
             int i = 0;
             Console.WriteLine("My pokemon are :");
-            while (i < mypokemon.Count)
+            while (i < _pokemons.Count)
             {
-                Console.WriteLine("- {0}", mypokemon[i]);
+                Console.WriteLine("- {0}", _pokemons[i]);
                 i++;
             }
         }
 
         public bool IsAlive()
         {
-            foreach (Pokemon pokemon in mypokemon)
+            foreach (Pokemon pokemon in _pokemons)
             {
                 if (pokemon.IsKO) return false;
             }
@@ -74,18 +74,18 @@ namespace Pokemonbonus
             {
                 Console.Clear();
                 Console.WriteLine("Choose a pokemon");
-                foreach (var pokemon in mypokemon)
+                foreach (var pokemon in _pokemons)
                 {
                     Console.Write(" - {0}", pokemon.Name); 
                     pokemon.Describe();
                 }
-                Selected = int.Parse(Console.ReadLine());
-            } while (Selected < 0 || Selected >= mypokemon.Count);
+                _selected = int.Parse(Console.ReadLine());
+            } while (_selected < 0 || _selected >= _pokemons.Count);
         }
 
         public Pokemon GetSelectedPokemon()
         {
-            return mypokemon[Selected];
+            return _pokemons[_selected];
         }
     }
 }
