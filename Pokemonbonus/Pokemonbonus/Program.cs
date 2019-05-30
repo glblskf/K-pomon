@@ -7,7 +7,9 @@ namespace Pokemonbonus
   {
     public static void Main(string[] args)
     {
-       MyGame.Welcome()
+        Index index = new Index();
+        Pokemon starter = index.GetPokemon(0);
+        Console.WriteLine(starter.Name);
 
     }
   }

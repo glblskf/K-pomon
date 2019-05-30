@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.CompilerServices;
 
 namespace Pokemonbonus
@@ -221,7 +222,7 @@ namespace Pokemonbonus
 
         public Pokemon GetPokemon(int i)
         {
-            return new Pokemon(pokeName[i],pokeStat[i], new List<Attack.Poketype>() {Attack.Poketype.NORMAL}, new List<Attack>());
+            return new Pokemon(pokeName[i], pokeStat[i], new List<Attack.Poketype>() {Attack.Poketype.NORMAL}, new List<Attack>());
         }
     }
 }
