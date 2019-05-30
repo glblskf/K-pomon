@@ -110,12 +110,13 @@ namespace Pokemonbonus
             Console.WriteLine("Enter your name to start or exit:");
             Console.WriteLine("|Enter my name : 1");
             Console.WriteLine("|Exit : 2");
-
+            Console.Write(">");
             string readme = Console.ReadLine();
             
             switch (readme)
             {
                     case "1":
+                        Console.WriteLine("who are you !");
                         Console.Write(">");
                         string name = Console.ReadLine();
                         Console.WriteLine("Nice to meet you {0} !, How old are you ?",name);
@@ -139,7 +140,7 @@ namespace Pokemonbonus
         public static void myfirstpokemon()
         {
             Console.WriteLine("| Bulbizaur : 1 | Charmander : 2 | Squirtle : 3 |");
-            Console.WriteLine(">");
+            Console.Write(">");
             string myread = Console.ReadLine();
             
             switch (myread)
@@ -176,7 +177,6 @@ namespace Pokemonbonus
             Console.WriteLine("Your very own PoKeMoN legend is about to unfold!");
             Console.WriteLine("A world of dreams and adventures with PoKeMoN awaits! Let's go !");
             Console.WriteLine("It's now time to choose your first PoKeMoN !");
-            Console.WriteLine();
             myfirstpokemon();
             Updates();
             
