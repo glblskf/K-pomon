@@ -6,10 +6,9 @@ namespace Pokemonbonus
   internal class Program
   {
     public static void Main(string[] args)
-    {
-        Index index = new Index();
-        Pokemon starter = Index.GetPokemon(0);
-        Console.WriteLine(starter.Name);
+    { 
+        MyGame.Welcome();
+        MyGame.Getmyfirstpokemon();
 
     }
   }

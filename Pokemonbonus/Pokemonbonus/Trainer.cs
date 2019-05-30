@@ -59,7 +59,7 @@ namespace Pokemonbonus
             }
         }
 
-        public static bool IsAlive()
+        public bool IsAlive()
         {
             foreach (Pokemon pokemon in _pokemons)
             {
