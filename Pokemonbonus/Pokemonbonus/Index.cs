@@ -12,8 +12,8 @@ namespace Pokemonbonus
         private string DEF = "DEFENSE";
         private string VIT = "VITESSE";
         private string SPE = "SPECIAL";
-        private List<Dictionary<string, int>> pokeStat;
-        private List<string> pokeName;
+        private static List<Dictionary<string, int>> pokeStat;
+        private static List<string> pokeName;
         public Index()
         {
             List<Dictionary<string, int>> pokeStat = new List<Dictionary<string, int>>();   
@@ -256,7 +256,7 @@ namespace Pokemonbonus
 
         }
 
-        public Pokemon GetPokemon(int i)
+        public static Pokemon GetPokemon(int i)
         {
             return new Pokemon(pokeName[i], pokeStat[i], new List<Attack.Poketype>() {Attack.Poketype.NORMAL}, new List<Attack>());
         }
