@@ -13,12 +13,14 @@ namespace Pokemonbonus
         private string _name;
         private string _description;
         private Poketype _attackType;
+        private int _damage;
 
-        public Attack(string name, string description, Poketype attackType)
+        public Attack(string name, string description, Poketype attackType, int damage)
         {
             _name = name;
             _description = description;
             _attackType = attackType;
+            _damage = damage;
         }
 
         public enum Poketype
@@ -40,9 +42,11 @@ namespace Pokemonbonus
             DRAGON
         }
 
-        public int GetDamage(Pokemon attacker, Pokemon defendant)
+        public void GetDamage(Pokemon attacker, Pokemon defendant)
         {
-            
+            float mult = GetMultiplier(defendant.Type[0]);
+            float damage = ((float) ((2 * attacker.Level + 10) / 250 * attacker.Force / defendant.Defence * _damage) + 2) * mult;
+            defendant.GetHurt((int) damage);
         }
         
         

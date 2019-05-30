@@ -10,7 +10,11 @@ namespace Pokemonbonus
 
         private List<Attack.Poketype> _type;
         private string _name;
+        
         private int _level;
+        private int _xp = 0;
+        private int _xpCap = 10;
+        
         private bool _isKO = false;
         
         private int _maxLife;
@@ -47,9 +51,15 @@ namespace Pokemonbonus
             Console.WriteLine("My name is {0} I'm a pokemon of type {1} and I'm level {2}", _name, _type, _level);
         }
 
-        public void levelUp()
+        public void levelUp(int amount)
         {
-            _level++;
+            _xp += amount;
+            while (_xp > _xpCap)
+            {
+                _level++;
+                _xp -= _xpCap;
+                _xpCap += _xpCap/10;
+            }
         }
 
         public void GetHurt(int damage)
@@ -76,6 +86,26 @@ namespace Pokemonbonus
         {
             get { return _life; }
             set { _life = value; }
+        }
+
+        public int Level
+        {
+            get { return _level; }
+        }
+
+        public int Force
+        {
+            get { return _force; }
+        }
+
+        public int Defence
+        {
+            get { return _defence; }
+        }
+
+        public List<Attack.Poketype> Type
+        {
+            get { return _type; }
         }
     }
 }
