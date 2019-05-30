@@ -9,6 +9,6 @@ namespace Pokemonbonus
     {
        MyGame.Welcome();
        MyGame.Updates();
-    }  
+    }
   }
 }

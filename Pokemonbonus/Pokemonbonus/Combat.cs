@@ -1,6 +1,8 @@
 
 
 using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace Pokemonbonus
 {
@@ -29,7 +31,21 @@ namespace Pokemonbonus
 
         public void PlayerTurn(Trainer player)
         {
-            Console.WriteLine("=======|  TOUR DE {0}  |=======", player);
+            List<string> actions = new List<string>(){"Attaquer", "Sac", "Fuir", "Changer de pokemon"};
+                Console.WriteLine("=======|  TOUR DE {0}  |=======", player.Name);
+            Console.WriteLine("Choisissez une action :");
+            for (int i = 0; i < actions.Count; i++)
+            {
+                Console.WriteLine("  {0}- {1}", i+1, actions);
+            }
+
+            int choice;
+            do
+            {
+                Console.Write(">> ");
+                choice = int.Parse(Console.ReadLine()) - 1;
+            } while (choice >= 0 && choice < actions.Count);
+            
         }
     }
 }
