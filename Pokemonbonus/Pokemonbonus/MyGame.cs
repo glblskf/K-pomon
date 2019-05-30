@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Media;
@@ -91,7 +92,7 @@ namespace Pokemonbonus
         public static void Welcome()
         {
             System.Media.SoundPlayer Music = new SoundPlayer();
-            Music.SoundLocation = Directory.GetCurrentDirectory() + @"\music.wav";
+            Music.SoundLocation = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + @"\music.wav";
             Music.PlayLooping();
         }
     }
