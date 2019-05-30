@@ -4,11 +4,11 @@ namespace Pokemonbonus
 {
     public class Animal
     {
-        private string name;
+        private string _name;
         
         public Animal(string name)
         {
-            this.name = name;
+            _name = name;
         }
         
         public void WhoAmI()
@@ -18,17 +18,17 @@ namespace Pokemonbonus
 
         public void Describe()
         {
-            Console.WriteLine("My name is {0}.",name);
+            Console.WriteLine("My name is {0}.", _name);
         }
 
         public void Rename(string newName)
         {
-            this.name = newName;
+            _name = newName;
         }
 
         public string Name
         {
-            get {return name;}
+            get {return _name;}
         }
     }
 }

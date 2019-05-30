@@ -5,16 +5,16 @@ namespace Pokemonbonus
 {
     public class Trainer : Animal
     {
-        private string name;
-        private int age;
-        private List<Pokemon> mypokemon = new List<Pokemon>();
-        private int Selected = 0;
+        private string _name;
+        private int _age;
+        private List<Pokemon> _pokemons = new List<Pokemon>();
+        private int _selected = 0;
 
         public Trainer(string name, int age)
             : base(name)
         {
-            this.name = name;
-            this.age = age;
+            _name = name;
+            _age = age;
         }
 
         public void WhoAmI()
@@ -24,23 +24,23 @@ namespace Pokemonbonus
 
         public void Describe()
         {
-            Console.WriteLine("My name is {0}, I'm {1} and have {2} Pokemon !", name, age, mypokemon.Count);
+            Console.WriteLine("My name is {0}, I'm {1} and have {2} Pokemon !", _name, _age, _pokemons.Count);
         }
 
-        public bool Age
+        public int Age
         {
-            get { return Age; }
-            set { Age = value; }
+            get { return _age; }
+            set { _age = value; }
         }
 
         public void Birthday()
         {
-            this.age += age;
+            _age++;
         }
 
         public int NumberOfPokemon()
         {
-            return mypokemon.Count;
+            return _pokemons.Count;
         }
 
         public void CatchAPokemon(Pokemon pokemon)
