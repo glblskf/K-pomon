@@ -30,10 +30,10 @@ namespace Pokemonbonus
             : base(name)
         {
             _name = name;
-            _maxLife = stat["PV"];
-            _life = stat["PV"];
+            _maxLife = stat["HP"];
+            _life = stat["HP"];
             _force = stat["FORCE"];
-            _defence = stat["DEFENCE"];
+            _defence = stat["DEFENSE"];
             _vitesse = stat["VITESSE"];
             _special = stat["SPECIAL"];
             _type = type;
