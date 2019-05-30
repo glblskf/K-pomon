@@ -8,6 +8,7 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Pokemonbonus" t="IncludeRecursive">
         <e p="Animal.cs" t="Include" />
+        <e p="Attack.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Menu.cs" t="Include" />
         <e p="MyGame.cs" t="Include" />

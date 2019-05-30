@@ -1,30 +1,25 @@
 using System;
+using System.Collections.Generic;
 
 namespace Pokemonbonus
 {
 
     public class Pokemon : Animal
     {
-        public enum Poketype
-        {
-            POISON,
-            FIRE,
-            WATER,
-            GRASS,
-            ELECTRIK
-        }
-
-        private Poketype _type;
+        
+        private Attack.Poketype _type;
         private string _name;
         private int _damage;
         private int _level;
         private bool _isKO;
+        private int _maxLife;
         private int _life;
 
-        public Pokemon(string name, int life, int damage, Poketype type)
+        public Pokemon(string name, int life, int damage, Attack.Poketype type)
             : base(name)
         {
             _name = name;
+            _maxLife = life;
             _life = life;
             _type = type;
             _level = 1;

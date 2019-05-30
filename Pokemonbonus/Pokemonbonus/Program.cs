@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Remoting.Messaging;
 
 namespace Pokemonbonus
 {
@@ -6,11 +7,9 @@ namespace Pokemonbonus
   {
     public static void Main(string[] args)
     {   
-      Trainer red = new Trainer("Red", 10);
-      Pokemon pichu = new Pokemon("pichu", 10, 1, Pokemon.Poketype.ELECTRIK);
+      Attack surf = new Attack("Surf", "", Attack.Poketype.EAU);
       
-      Menu.MainMenu();
-      MyGame.Updates();
-    }
+      Console.WriteLine(surf.GetMultiplier(Attack.Poketype.FEU));
+    }  
   }
 }

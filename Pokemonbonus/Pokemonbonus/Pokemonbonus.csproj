@@ -39,6 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
+    <Compile Include="Attack.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MyGame.cs" />
     <Compile Include="Pokemon.cs" />
