@@ -138,7 +138,7 @@ namespace Pokemonbonus
 
         public static void myfirstpokemon()
         {
-            Console.WriteLine("| bulbizaur : 1 | charmander : 2 | squirtle : 3 |");
+            Console.WriteLine("| Bulbizaur : 1 | Charmander : 2 | Squirtle : 3 |");
             Console.WriteLine(">");
             string myread = Console.ReadLine();
             
@@ -162,10 +162,12 @@ namespace Pokemonbonus
         public static void Getmyfirstpokemon()
         {
             Console.Clear();
-            Console.WriteLine("Hello there! Welcome to the world of pokémon! My name is Oak! People call me the pokémon Prof! This world is inhabited by creatures called pokémon! For some people, pokémon are pets. Others use them for fights. Myself...I study pokémon as a profession.");
+            Console.WriteLine("Hello there! Welcome to the world of pokémon! My name is Oak!");
+            Console.WriteLine("People call me the pokémon Prof! This world is inhabited by creatures called pokémon! ");
+            Console.WriteLine("For some people, pokémon are pets. Others use them for fights. Myself...I study pokémon as a profession.");
             Console.WriteLine("But first, tell me about yourself.");
             Starter();
-            Console.WriteLine("This is my grandson, he's been yur rival since you both were babies.");
+            Console.WriteLine("This is my grandson, he's been your rival since you both were babies.");
             Console.WriteLine("....Erm, what was his name now ?");
             Console.Write(">");
             string rivalname = Console.ReadLine();
@@ -176,6 +178,7 @@ namespace Pokemonbonus
             Console.WriteLine("It's now time to choose your first PoKeMoN !");
             Console.WriteLine();
             myfirstpokemon();
+            Updates();
             
 
 
