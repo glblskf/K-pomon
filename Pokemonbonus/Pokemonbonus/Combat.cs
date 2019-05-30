@@ -45,7 +45,7 @@ namespace Pokemonbonus
                 Console.Write(">> ");
                 choice = int.Parse(Console.ReadLine()) - 1;
             } while (choice >= 0 && choice < actions.Count);
-            
+            Console.WriteLine(choice);
         }
     }
 }
