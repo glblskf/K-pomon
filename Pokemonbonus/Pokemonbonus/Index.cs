@@ -212,7 +212,48 @@ namespace Pokemonbonus
             pokeName.Add("Ninetales");
             pokeName.Add("Jigglypuff");
             pokeName.Add("Wigglytuff");
-                
+            pokeName.Add("Zubat");
+            pokeName.Add("Golbat");
+            pokeName.Add("Oddish");
+            pokeName.Add("Gloom");
+            pokeName.Add("Vileplume");
+            pokeName.Add("Paras");
+            pokeName.Add("Parasect");
+            pokeName.Add("Venonat");
+            pokeName.Add("Venomoth");
+            pokeName.Add("Diglet");
+            pokeName.Add("Dugtrio");
+            pokeName.Add("Meowth");
+            pokeName.Add("Persian");
+            pokeName.Add("Psyduck");
+            pokeName.Add("Golduck");
+            pokeName.Add("Mankey");
+            pokeName.Add("Primeape");
+            pokeName.Add("Growlith");
+            pokeName.Add("Arcanine");
+            pokeName.Add("Poliwag");
+            pokeName.Add("Poliwhirl");
+            pokeName.Add("Poliwrath");
+            pokeName.Add("Abra");
+            pokeName.Add("Kadabra");
+            pokeName.Add("Alakazam");
+            pokeName.Add("Machop");
+            pokeName.Add("Machoke");
+            pokeName.Add("Machamp");
+            pokeName.Add("Bellsprout");
+            pokeName.Add("Weepinbell");
+            pokeName.Add("Victreebel");
+            pokeName.Add("Tentacool");
+            pokeName.Add("Tentacruel");
+            pokeName.Add("Geodude");
+            pokeName.Add("Graveler");
+            pokeName.Add("Golem");
+            pokeName.Add("Ponyta");
+            pokeName.Add("Rapiddash");
+            pokeName.Add("Slowpoke");
+            pokeName.Add("Slowbro");
+            pokeName.Add("Magnemite");
+
         }
 
         public Pokemon GetPokemon(int i)
