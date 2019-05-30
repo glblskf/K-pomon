@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 namespace Pokemonbonus
 {
@@ -188,11 +189,34 @@ namespace Pokemonbonus
             pokeName.Add("Pidgey");
             pokeName.Add("Pidgeotto");
             pokeName.Add("Rattata");
+            pokeName.Add("Raticate");
+            pokeName.Add("Spearow");
+            pokeName.Add("Fearow");
+            pokeName.Add("Ekans");
+            pokeName.Add("Arbok");
+            pokeName.Add("Pikachu");
+            pokeName.Add("Raichu");
+            pokeName.Add("Sandshrew");
+            pokeName.Add("Sandslash");
+            pokeName.Add("Nidoran(f)");
+            pokeName.Add("Nidorina");
+            pokeName.Add("Nirorina");
+            pokeName.Add("Nidoqueen");
+            pokeName.Add("Nidoran(m)");
+            pokeName.Add("Nidorino");
+            pokeName.Add("Nidoking");
+            pokeName.Add("Clefairy");
+            pokeName.Add("Clefable");
+            pokeName.Add("Vulpix");
+            pokeName.Add("Ninetales");
+            pokeName.Add("Jigglypuff");
+            pokeName.Add("Wigglytuff");
+                
         }
 
-        /*public static Pokemon GetPokemon(int Index)
+        public Pokemon GetPokemon(int i)
         {
-            //return new Pokemon(pokeName[Index]);
-        }*/
+            return new Pokemon(pokeName[i],pokeStat[i], new List<Attack.Poketype>() {Attack.Poketype.NORMAL}, new List<Attack>());
+        }
     }
 }
