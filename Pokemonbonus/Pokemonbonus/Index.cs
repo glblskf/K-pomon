@@ -137,35 +137,30 @@ namespace Pokemonbonus
             pokeStat.Add(new Dictionary<string, int>(){{HP, 30}, {ATK, 45}, {DEF, 55}, {VIT, 85}, {SPE, 70}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 60}, {ATK, 75}, {DEF, 85}, {VIT, 115}, {SPE, 100}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 40}, {ATK, 45}, {DEF, 65}, {VIT, 90}, {SPE, 100}});
-            
             pokeStat.Add(new Dictionary<string, int>(){{HP, 70}, {ATK, 110}, {DEF, 80}, {VIT, 105}, {SPE, 55}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 65}, {ATK, 50}, {DEF, 35}, {VIT, 95}, {SPE, 95}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 65}, {ATK, 83}, {DEF, 57}, {VIT, 105}, {SPE, 85}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 65}, {ATK, 95}, {DEF, 57}, {VIT, 93}, {SPE, 85}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 65}, {ATK, 125}, {DEF, 100}, {VIT, 85}, {SPE, 55}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 75}, {ATK, 100}, {DEF, 95}, {VIT, 110}, {SPE, 70}});
-            
             pokeStat.Add(new Dictionary<string, int>(){{HP, 20}, {ATK, 10}, {DEF, 55}, {VIT, 80}, {SPE, 20}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 95}, {ATK, 125}, {DEF, 79}, {VIT, 81}, {SPE, 100}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 130}, {ATK, 85}, {DEF, 80}, {VIT, 60}, {SPE, 95}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 48}, {ATK, 48}, {DEF, 48}, {VIT, 48}, {SPE, 48}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 55}, {ATK, 55}, {DEF, 50}, {VIT, 55}, {SPE, 65}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 130}, {ATK, 65}, {DEF, 60}, {VIT, 65}, {SPE, 110}});
-            
             pokeStat.Add(new Dictionary<string, int>(){{HP, 65}, {ATK,65 }, {DEF, 60}, {VIT, 130}, {SPE, 110}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 65}, {ATK, 130}, {DEF, 60}, {VIT, 65}, {SPE, 110}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 65}, {ATK, 60}, {DEF, 70}, {VIT, 40}, {SPE, 75}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 35}, {ATK, 40}, {DEF, 100}, {VIT, 35}, {SPE, 90}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 70}, {ATK, 60}, {DEF, 125}, {VIT, 55}, {SPE, 115}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 30}, {ATK, 80}, {DEF, 90}, {VIT, 55}, {SPE, 45}});
-            
             pokeStat.Add(new Dictionary<string, int>(){{HP, 60}, {ATK, 115}, {DEF, 105}, {VIT, 80}, {SPE, 70}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 80}, {ATK, 105}, {DEF, 65}, {VIT, 130}, {SPE, 60}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 160}, {ATK, 110}, {DEF, 65}, {VIT, 30}, {SPE, 65}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 90}, {ATK, 85}, {DEF, 100}, {VIT, 85}, {SPE, 125}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 90}, {ATK, 90}, {DEF, 85}, {VIT, 100}, {SPE, 125}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 90}, {ATK, 100}, {DEF, 90}, {VIT, 90}, {SPE, 125}});
-            
             pokeStat.Add(new Dictionary<string, int>(){{HP, 41}, {ATK, 64}, {DEF, 45}, {VIT, 90}, {SPE, 50}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 61}, {ATK, 84}, {DEF, 65}, {VIT, 50}, {SPE, 70}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 91}, {ATK, 134}, {DEF, 95}, {VIT, 70}, {SPE, 100}});

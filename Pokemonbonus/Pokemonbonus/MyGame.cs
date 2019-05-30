@@ -94,10 +94,46 @@ namespace Pokemonbonus
             System.Media.SoundPlayer Music = new SoundPlayer();
             Music.SoundLocation = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + @"\music.wav";
             Music.PlayLooping();
+            
+            Menu.MainMenu();
         }
+
+
+        public static Trainer Starter()
+        {
+
+            Trainer trainer1 = new Trainer("",0);
+                
+            Index newindex= Index; 
+            
+            Console.WriteLine("Enter your name to start or exit:");
+            Console.WriteLine("|Enter my name : 1");
+            Console.WriteLine("|Exit : 2");
+
+            string readme = Console.ReadLine();
+
+            switch (readme)
+            {
+                    case "1":
+                        Console.Write(">");
+                        string name = Console.ReadLine();
+                        Console.WriteLine("How old are you ?");
+                        Console.Write(">");
+                        int age = int.Parse(Console.ReadLine());
+                        Trainer _trainer = new Trainer(name, age);
+                        trainer1 = _trainer;
+                        break;
+                    case "2":
+                        Console.WriteLine("goodbye my friend !");
+                        break;
+                    default:
+                        Starter();
+                        break;
+            }
+
+            return trainer1;
+        }
+      
     }
-    
-    
-    
-    
+  
 }
