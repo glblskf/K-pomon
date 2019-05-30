@@ -29,7 +29,7 @@ namespace Pokemonbonus
 
         public bool PlayerTurn(Trainer player)
         {
-            Console.WriteLine("======   TOUR DE {0}   =======", player);
+            Console.WriteLine("=======|  TOUR DE {0}  |=======", player);
         }
     }
 }
