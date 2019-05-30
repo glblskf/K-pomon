@@ -10,6 +10,7 @@
         <e p="Animal.cs" t="Include" />
         <e p="Attack.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Combat.cs" t="Include" />
         <e p="Index.cs" t="Include" />
         <e p="Menu.cs" t="Include" />
         <e p="MyGame.cs" t="Include" />
