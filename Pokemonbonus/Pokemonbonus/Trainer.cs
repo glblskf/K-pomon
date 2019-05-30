@@ -5,10 +5,10 @@ namespace Pokemonbonus
 {
     public class Trainer : Animal
     {
-        private string _name;
-        private int _age;
-        private List<Pokemon> _pokemons = new List<Pokemon>();
-        private int _selected = 0;
+        private static string _name;
+        private static int _age;
+        private static List<Pokemon> _pokemons = new List<Pokemon>();
+        private static int _selected = 0;
 
         public Trainer(string name, int age)
             : base(name)
@@ -17,38 +17,38 @@ namespace Pokemonbonus
             _age = age;
         }
 
-        public void WhoAmI()
+        public static void WhoAmI()
         {
             Console.WriteLine("i am an Trainer !");
         }
 
-        public void Describe()
+        public static void Describe()
         {
             Console.WriteLine("My name is {0}, I'm {1} and have {2} Pokemon !", _name, _age, _pokemons.Count);
         }
 
-        public int Age
+        public static int Age
         {
             get { return _age; }
             set { _age = value; }
         }
 
-        public void Birthday()
+        public static void Birthday()
         {
             _age++;
         }
 
-        public int NumberOfPokemon()
+        public static int NumberOfPokemon()
         {
             return _pokemons.Count;
         }
 
-        public void CatchAPokemon(Pokemon pokemon)
+        public static void CatchAPokemon(Pokemon pokemon)
         {
             _pokemons.Add(pokemon);
         }
 
-        public void MyPokemon()
+        public static void MyPokemon()
         {
             int i = 0;
             Console.WriteLine("My pokemon are :");
@@ -59,7 +59,7 @@ namespace Pokemonbonus
             }
         }
 
-        public bool IsAlive()
+        public static bool IsAlive()
         {
             foreach (Pokemon pokemon in _pokemons)
             {
@@ -68,7 +68,7 @@ namespace Pokemonbonus
             return true;
         }
 
-        public void Select()
+        public static void Select()
         {
             do
             {
@@ -83,7 +83,7 @@ namespace Pokemonbonus
             } while (_selected < 0 || _selected >= _pokemons.Count);
         }
 
-        public Pokemon GetSelectedPokemon()
+        public static Pokemon GetSelectedPokemon()
         {
             return _pokemons[_selected];
         }

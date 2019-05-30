@@ -136,6 +136,29 @@ namespace Pokemonbonus
             return trainer1;
         }
 
+        public static void myfirstpokemon()
+        {
+            Console.WriteLine("| bulbizaur : 1 | charmander : 2 | squirtle : 3 |");
+            Console.WriteLine(">");
+            string myread = Console.ReadLine();
+            
+            switch (myread)
+            {
+                case "1":
+                       Index.GetPokemon(0);
+                    break;
+                case "2":
+                    Index.GetPokemon(3);
+                    break;
+                case "3":
+                    Index.GetPokemon(6);
+                    break;
+                default:
+                    myfirstpokemon();
+                    break;
+            }
+        }
+
         public static void Getmyfirstpokemon()
         {
             Console.Clear();
@@ -150,9 +173,12 @@ namespace Pokemonbonus
             Console.WriteLine("{0}!",trainername);
             Console.WriteLine("Your very own PoKeMoN legend is about to unfold!");
             Console.WriteLine("A world of dreams and adventures with PoKeMoN awaits! Let's go !");
+            Console.WriteLine("It's now time to choose your first PoKeMoN !");
+            Console.WriteLine();
+            myfirstpokemon();
             
-            
-            
+
+
         }
       
     }
