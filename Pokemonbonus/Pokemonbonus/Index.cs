@@ -176,6 +176,23 @@ namespace Pokemonbonus
             
             List<string> pokeName = new List<string>();
             pokeName.Add("Bulbasaur");
+            pokeName.Add("Ivysaur");
+            pokeName.Add("Venusaur");
+            pokeName.Add("Charmander");
+            pokeName.Add("Charmeleon");
+            pokeName.Add("Charizard");
+            pokeName.Add("Squirtle");
+            pokeName.Add("Wartortle");
+            pokeName.Add("Blastoise");
+            pokeName.Add("Caterpie");
+            pokeName.Add("Metapod");
+            pokeName.Add("Butterfree");
+            pokeName.Add("Weedle");
+            pokeName.Add("Kakuna");
+            pokeName.Add("Beedrill");
+            pokeName.Add("Pidgey");
+            pokeName.Add("Pidgeotto");
+            pokeName.Add("Rattata");
         }
 
         public static Pokemon GetPokemon(int Index)
