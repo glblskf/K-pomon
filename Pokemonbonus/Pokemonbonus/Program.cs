@@ -7,7 +7,7 @@ namespace Pokemonbonus
   {
     public static void Main(string[] args)
     {
-      
+       MyGame.Welcome();
     }  
   }
 }
