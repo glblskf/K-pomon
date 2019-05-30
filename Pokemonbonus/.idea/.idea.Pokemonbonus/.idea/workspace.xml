@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62ca7216-b6b0-4efc-8f6d-bddc6bf3f683" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Pokemonbonus/Index.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pokemonbonus/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pokemonbonus/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pokemonbonus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pokemonbonus/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemonbonus/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemonbonus/Attack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemonbonus/Pokemon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemonbonus/Pokemon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemonbonus/Pokemonbonus.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemonbonus/Pokemonbonus.csproj" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pokemonbonus/Pokemon.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="255">
+              <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
               <folding>
                 <marker date="1559217022198" expanded="false" signature="6:73" ph="..." />
                 <marker date="1559217022198" expanded="true" signature="97:1852" ph="{...}" />
@@ -75,6 +76,21 @@
                 <marker date="1559217022198" expanded="true" signature="1588:1730" ph="{...}" />
                 <marker date="1559217022198" expanded="true" signature="1658:1720" ph="{...}" />
                 <marker date="1559217022198" expanded="true" signature="1755:1844" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Pokemonbonus/Index.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+              <folding>
+                <marker date="1559219942962" expanded="true" signature="6:47" ph="..." />
+                <marker date="1559219942962" expanded="true" signature="71:2864" ph="{...}" />
+                <marker date="1559219942962" expanded="true" signature="96:2862" ph="{...}" />
+                <marker date="1559219942962" expanded="true" signature="412:2856" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -188,6 +204,7 @@
     <setting file="file://$PROJECT_DIR$/Pokemonbonus/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pokemonbonus/Pokemon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pokemonbonus/Trainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pokemonbonus/Index.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pokemonbonus/Animal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pokemonbonus/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pokemonbonus/Attack.cs" root0="FORCE_HIGHLIGHTING" />
@@ -202,6 +219,7 @@
         <option value="$PROJECT_DIR$/Pokemonbonus/Program.cs" />
         <option value="$PROJECT_DIR$/Pokemonbonus/Attack.cs" />
         <option value="$PROJECT_DIR$/Pokemonbonus/Pokemon.cs" />
+        <option value="$PROJECT_DIR$/Pokemonbonus/Index.cs" />
       </list>
     </option>
   </component>
@@ -294,7 +312,7 @@
       <workItem from="1559140921112" duration="3599000" />
       <workItem from="1559144770317" duration="2448000" />
       <workItem from="1559176596868" duration="7809000" />
-      <workItem from="1559215654525" duration="1538000" />
+      <workItem from="1559215654525" duration="4294000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed past mistakes">
       <created>1559177899165</created>
@@ -307,7 +325,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15407000" />
+    <option name="totallyTimeSpent" value="18163000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,7 +340,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12972973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12972973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -542,8 +560,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pokemonbonus/Pokemon.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="255">
+          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
           <folding>
             <marker date="1559217022198" expanded="false" signature="6:73" ph="..." />
             <marker date="1559217022198" expanded="true" signature="97:1852" ph="{...}" />
@@ -557,6 +575,19 @@
             <marker date="1559217022198" expanded="true" signature="1588:1730" ph="{...}" />
             <marker date="1559217022198" expanded="true" signature="1658:1720" ph="{...}" />
             <marker date="1559217022198" expanded="true" signature="1755:1844" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pokemonbonus/Index.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding>
+            <marker date="1559219942962" expanded="true" signature="6:47" ph="..." />
+            <marker date="1559219942962" expanded="true" signature="71:2864" ph="{...}" />
+            <marker date="1559219942962" expanded="true" signature="96:2862" ph="{...}" />
+            <marker date="1559219942962" expanded="true" signature="412:2856" ph="{...}" />
           </folding>
         </state>
       </provider>
