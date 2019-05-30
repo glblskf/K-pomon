@@ -16,7 +16,7 @@ namespace Pokemonbonus
         private List<string> pokeName;
         public Index()
         {
-            List<Dictionary<string, int>> pokeStat = new List<Dictionary<string, int>>();   
+            pokeStat = new List<Dictionary<string, int>>();   
             pokeStat.Add(new Dictionary<string, int>(){{HP, 45}, {ATK, 49}, {DEF, 49}, {VIT, 45}, {SPE, 65}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 45}, {ATK, 62}, {DEF, 63}, {VIT, 60}, {SPE, 80}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 80}, {ATK, 83}, {DEF, 83}, {VIT, 80}, {SPE, 100}});
@@ -169,9 +169,8 @@ namespace Pokemonbonus
             pokeStat.Add(new Dictionary<string, int>(){{HP, 106}, {ATK, 110}, {DEF, 90}, {VIT, 80}, {SPE, 154}});
             pokeStat.Add(new Dictionary<string, int>(){{HP, 100}, {ATK, 100}, {DEF, 100}, {VIT, 130}, {SPE, 100}});
 
-            
-            
-            List<string> pokeName = new List<string>();
+
+            pokeName = new List<string>();
             pokeName.Add("Bulbasaur");
             pokeName.Add("Ivysaur");
             pokeName.Add("Venusaur");
@@ -327,7 +326,11 @@ namespace Pokemonbonus
 
         public Pokemon GetPokemon(int i)
         {
-            return new Pokemon(pokeName[i], pokeStat[i], new List<Attack.Poketype>() {Attack.Poketype.NORMAL}, new List<Attack>());
+            string name = pokeName[i];
+            Dictionary<string, int> stat = pokeStat[i];
+            List<Attack.Poketype> types = new List<Attack.Poketype>();
+            List<Attack> atks = new List<Attack>();
+            return new Pokemon(name, stat, types, atks);
         }
     }
 }
