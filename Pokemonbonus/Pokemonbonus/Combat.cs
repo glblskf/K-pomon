@@ -59,7 +59,7 @@ namespace Pokemonbonus
                     Flee();
                     break;
                 case 3:
-                    ChangePokemon();
+                    ChangePokemon(player);
                     break;
                 default:
                     throw new Exception();
@@ -77,17 +77,17 @@ namespace Pokemonbonus
 
         public void Bag()
         {
-            
+            Console.WriteLine("======|   BAG   |=======");
         }
 
         public void Flee()
         {
-            
+            Console.WriteLine("======|   FLEE   |=======");
         }
 
-        public void ChangePokemon()
+        public void ChangePokemon(Trainer player)
         {
-            
+            player.Select();
         }
     }
 }
