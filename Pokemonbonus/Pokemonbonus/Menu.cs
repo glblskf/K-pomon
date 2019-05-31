@@ -177,5 +177,29 @@ namespace Pokemonbonus
                         return Getshop();
             }
         }
+
+        public static Fight GetFight()
+        {
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine(               "                 ****************************************************************");
+            Console.WriteLine(               "                 *                           Fight Menu                         *");
+            Console.WriteLine(               "                 *                                                              *");
+            Console.WriteLine(               "                 *                 | Wild pokemon : 1 | PVP : 2 |               *");
+            Console.WriteLine(               "                 *                                                              *");
+            Console.WriteLine(               "                 ****************************************************************");
+            Console.Write(                   "      > ");
+            string read5 = Console.ReadLine();
+
+            switch (read5)
+            {
+                    case "1":
+                        return Fight.WILD;
+                    case "2":
+                        return Fight.TRAINER;
+                    default:
+                        return GetFight();
+            }
+        }
     }
 }
