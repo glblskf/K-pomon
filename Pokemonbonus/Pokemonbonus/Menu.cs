@@ -59,15 +59,6 @@ namespace Pokemonbonus
             WILD,
             TRAINER
         }
-
-        public enum InFight
-        {
-            ATTACK,
-            CHANGE,
-            USEOBJECT,
-            CAPTURE,
-            RUNAWAY
-        }
     
         public static Action GetNextAction()
         {

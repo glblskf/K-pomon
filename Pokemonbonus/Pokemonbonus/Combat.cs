@@ -31,8 +31,9 @@ namespace Pokemonbonus
 
         public void PlayerTurn(Trainer player, Trainer opponent)
         {
+            Console.Clear();
             List<string> actions = new List<string>(){"Attaquer", "Sac", "Fuir", "Changer de pokemon"};
-            Console.WriteLine("=======|  TOUR DE {0}  |=======", player.Name);
+            Console.WriteLine("      =======|  TOUR DE {0}  |=======", player.Name);
             
             Console.Write("{0}'s pokemon", player.Name);
             player.GetSelectedPokemon().GetPokemonCombatInfo();
@@ -75,7 +76,9 @@ namespace Pokemonbonus
 
         public void Attack(Trainer player, Trainer opponent)
         {
-            Console.WriteLine("======|   ATTACK   |======");
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine("      ======|   ATTACK   |======");
             foreach (var attack in player.GetSelectedPokemon().Attacks)
             {
                 attack.Describe();
@@ -87,12 +90,19 @@ namespace Pokemonbonus
 
         public void Bag()
         {
-            Console.WriteLine("======|   BAG   |=======");
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine("      =======|   BAG   |=======");
+            
         }
 
         public void Flee()
         {
-            Console.WriteLine("======|   FLEE   |=======");
+            Console.Clear();
+            Console.WriteLine();
+            
+            Console.WriteLine("      =======|   FLEE   |=======");
+            Console.WriteLine("you ran over from your opponent !");
         }
 
         public void ChangePokemon(Trainer player)

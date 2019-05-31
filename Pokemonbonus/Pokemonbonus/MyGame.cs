@@ -181,9 +181,6 @@ namespace Pokemonbonus
         public static void Starter()
         {
 
-            Trainer trainer1 = new Trainer("", 0);
-
-            Index index = new Index();
             Console.Clear();
             Console.WriteLine();
             Console.WriteLine("                     *Enter your name to start or exit*              ");
