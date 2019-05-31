@@ -21,11 +21,34 @@ namespace Pokemonbonus
 
         public  void CombatLoop()
         {
-            if (_player1.IsAlive() && _player2.IsAlive())
+            while (_player1.IsAlive() && _player2.IsAlive())
             {
                 PlayerTurn(_player1, _player2);
+                CheckAlive();
                 PlayerTurn(_player2, _player1);
-                Console.ReadLine();
+                CheckAlive();
+            }
+        }
+
+        public void CheckAlive()
+        {
+            if (_player1.GetSelectedPokemon().IsKO)
+            {
+                Console.Clear();
+                Console.WriteLine("{0} needs to swap pokemon", _player1);
+                _player1.Select();
+                Console.Clear();
+                Console.WriteLine("{0} : Do you want to swap pokemon ? {Yes}/{No}", _player2);
+                if (Console.ReadLine() == "Yes") _player2.Select();
+            }
+            else if (_player1.GetSelectedPokemon().IsKO)
+            {
+                Console.Clear();
+                Console.WriteLine("{0} needs to swap pokemon", _player1);
+                _player1.Select();
+                Console.Clear();
+                Console.WriteLine("{0} : Do you want to swap pokemon ? {Yes}/{No}", _player2);
+                if (Console.ReadLine() == "Yes") _player2.Select();
             }
         }
 

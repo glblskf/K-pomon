@@ -85,11 +85,13 @@ namespace Pokemonbonus
                 Console.WriteLine("Choose a pokemon");
                 foreach (var pokemon in _pokemons)
                 {
-                    Console.Write(" - {0}", pokemon.Name); 
-                    pokemon.Describe();
+                    Console.Write(" - ");
+                    pokemon.GetPokemonCombatInfo();
                 }
                 _selected = int.Parse(Console.ReadLine());
             } while (_selected < 0 || _selected >= _pokemons.Count);
+            Console.WriteLine("{0}, Go !", GetSelectedPokemon().Name);
+            Console.ReadLine();
         }
 
         public Pokemon GetSelectedPokemon()

@@ -190,11 +190,11 @@ namespace Pokemonbonus
             string readme = Console.ReadLine();
 
             switch (readme)
-            {
+            {    
                 case "1":
                     Console.Clear();
                     Console.WriteLine();
-                    Console.WriteLine("      Oak: wath's your name again ? !");
+                    Console.WriteLine("      Oak: what's your name again ? !");
                     Console.WriteLine();
                     Console.Write("      > ");
                     string name = Console.ReadLine();
