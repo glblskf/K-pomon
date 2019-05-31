@@ -89,7 +89,7 @@ namespace Pokemonbonus
         public void Heal(int life)
         {
             _life = life;
-            if (_life > _maxLife)
+            if (_life > _maxLife || life == -1)
             {
                 _life = _maxLife;
             }

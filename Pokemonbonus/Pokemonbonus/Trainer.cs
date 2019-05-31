@@ -82,6 +82,10 @@ namespace Pokemonbonus
             do
             {
                 Console.Clear();
+                if (_pokemons[_selected].IsKO)
+                {
+                    Console.Write("{0} is KO...", GetSelectedPokemon().Name);
+                }
                 Console.WriteLine("Choose a pokemon");
                 foreach (var pokemon in _pokemons)
                 {
@@ -89,7 +93,7 @@ namespace Pokemonbonus
                     pokemon.GetPokemonCombatInfo();
                 }
                 _selected = int.Parse(Console.ReadLine());
-            } while (_selected < 0 || _selected >= _pokemons.Count);
+            } while (_selected < 0 || _selected >= _pokemons.Count && !_pokemons[_selected].IsKO);
             Console.WriteLine("{0}, Go !", GetSelectedPokemon().Name);
             Console.ReadLine();
         }
@@ -97,6 +101,14 @@ namespace Pokemonbonus
         public Pokemon GetSelectedPokemon()
         {
             return _pokemons[_selected];
+        }
+
+        public void Heal()
+        {
+            foreach (var pokemon in _pokemons)
+            {
+                pokemon.Heal(-1);
+            }
         }
     }
 }

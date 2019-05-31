@@ -47,10 +47,15 @@ namespace Pokemonbonus
                         //debut combat
                         combatmusic();
                         Combat combat = new Combat(MyGame.Trainer, MyGame.Opponent, true);
-                        combat.CombatLoop();
+                        bool isWon = combat.CombatLoop();
 
                         //fin combat et retour au menu
                         music();
+                        if (!isWon)
+                        {
+                            Console.WriteLine("{0} scurried to a pokemon center, \nprotecting the exhausted and fainted pokemon from further harm", Trainer.Name);
+                            Trainer.Heal();
+                        }
                         break;
 
                     case Menu.Action.SHOP:

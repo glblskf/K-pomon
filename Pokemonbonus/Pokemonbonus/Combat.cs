@@ -19,7 +19,7 @@ namespace Pokemonbonus
             _isWild = isWild;
         }
 
-        public  void CombatLoop()
+        public bool CombatLoop()
         {
             while (_player1.IsAlive() && _player2.IsAlive())
             {
@@ -28,6 +28,8 @@ namespace Pokemonbonus
                 PlayerTurn(_player2, _player1);
                 CheckAlive();
             }
+
+            return _player1.IsAlive();
         }
 
         public void CheckAlive()
