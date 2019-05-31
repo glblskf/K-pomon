@@ -15,9 +15,23 @@ namespace Pokemonbonus
         private static Trainer _opponent;
         private static Index _index = new Index();
 
-        public static Trainer Trainer => _trainer;
-        public static Trainer Opponent => _opponent;
-        public static Index Index => _index;
+        public static Trainer Trainer
+        {
+            get { return _trainer; }
+            set { _trainer = value; }
+        }
+
+        public static Trainer Opponent
+        {
+            get { return _opponent; }
+            set { _opponent = value; }
+        }
+
+        public static Index Index
+        {
+            get { return _index; }
+            set { _index = value; }
+        }
 
         public static void Updates()
         {
@@ -32,7 +46,7 @@ namespace Pokemonbonus
                     case Menu.Action.FIGHT:
                         //debut combat
                         combatmusic();
-                        MyGame.Trainer.CatchAPokemon(new Index().GetPokemon(0));
+                        MyGame.Trainer.CatchAPokemon(MyGame.Index.GetPokemon(0));
                         Combat combat = new Combat(MyGame.Trainer, MyGame.Opponent, true);
                         combat.CombatLoop();
 
