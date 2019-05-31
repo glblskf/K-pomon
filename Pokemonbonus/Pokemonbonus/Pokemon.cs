@@ -118,5 +118,11 @@ namespace Pokemonbonus
         }
 
         public List<Attack> Attacks => _attacks;
+
+        public void GetPokemonCombatInfo()
+        {
+            string life = new string('*', _life*10/_maxLife) + new string('-', 10-_life*10/_maxLife);
+            Console.WriteLine("{0} : [{1}] {2}/{3} ", _name, life, _life, _maxLife);
+        }
     }
 }

@@ -32,9 +32,14 @@ namespace Pokemonbonus
         public void PlayerTurn(Trainer player, Trainer opponent)
         {
             List<string> actions = new List<string>(){"Attaquer", "Sac", "Fuir", "Changer de pokemon"};
-            Console.WriteLine("=======|  TOUR DE {0}  |=======", player.Name); 
-            Console.WriteLine("YOUR POKEMON : {0}", player.GetSelectedPokemon().Name);
-            Console.WriteLine("{0}'S POKEMON : {1}", opponent.Name, opponent.GetSelectedPokemon().Name);
+            Console.WriteLine("=======|  TOUR DE {0}  |=======", player.Name);
+            
+            Console.Write("{0}'s pokemon", player.Name);
+            player.GetSelectedPokemon().GetPokemonCombatInfo();
+            
+            Console.Write("{0}'s pokemon", opponent.Name); 
+            opponent.GetSelectedPokemon().GetPokemonCombatInfo();
+
             Console.WriteLine("Choisissez une action :");
             for (int i = 0; i < actions.Count; i++)
             {
