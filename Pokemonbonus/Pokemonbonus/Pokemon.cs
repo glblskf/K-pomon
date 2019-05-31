@@ -26,7 +26,7 @@ namespace Pokemonbonus
         
         private List<Attack> _attacks;
 
-        public Pokemon(string name, Dictionary<string, int> stat, List<Attack.Poketype> type, List<Attack> attacks)
+        public Pokemon(string name, Dictionary<string, int> stat, List<Attack> attacks)
             : base(name)
         {
             _name = name;
@@ -36,7 +36,7 @@ namespace Pokemonbonus
             _defence = stat["DEFENSE"];
             _vitesse = stat["VITESSE"];
             _special = stat["SPECIAL"];
-            _type = type;
+            _type = new List<Attack.Poketype>() {(Attack.Poketype)stat["TYPE1"], (Attack.Poketype)stat["TYPE2"]};
             _attacks = attacks;
             _level = 1;
         }
