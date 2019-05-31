@@ -19,13 +19,13 @@ namespace Pokemonbonus
 
         public static void WhoAmI()
         {
-            Console.WriteLine("i am an Trainer !");
+            Console.WriteLine("      i am an Trainer !");
         }
 
         public static void Describe()
         {
             Console.WriteLine();
-            Console.WriteLine("My name is {0}, I'm {1} and have {2} Pokemon !", _name, _age, NumberOfPokemon());
+            Console.WriteLine("      My name is {0}, I'm {1} and have {2} Pokemon !", _name, _age, NumberOfPokemon());
         }
 
         public static int Age
@@ -54,9 +54,10 @@ namespace Pokemonbonus
             int i = 0;
             Console.WriteLine();
             Console.WriteLine("      My pokemon are :");
+            Console.WriteLine();
             while (i < _pokemons.Count)
             {
-                Console.WriteLine("- {0}", _pokemons[i]);
+                Console.WriteLine("> {0}", _pokemons[i]);
                 i++;
             }
         }

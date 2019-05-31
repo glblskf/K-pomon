@@ -43,12 +43,13 @@ namespace Pokemonbonus
 
         public void WhoAmI()
         {
-            Console.WriteLine("i am an pokemon !");
+            Console.WriteLine("      i am an pokemon !");
         }
 
         public void Describe()
         {
-            Console.WriteLine("My name is {0} I'm a pokemon of type {1} and I'm level {2}", _name, _type, _level);
+            Console.WriteLine();
+            Console.WriteLine("      My name is {0} I'm a pokemon of type {1} and I'm level {2}", _name, _type, _level);
         }
 
         public void levelUp(int amount)

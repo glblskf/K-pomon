@@ -41,6 +41,10 @@ namespace Pokemonbonus
                                 Console.ReadLine();
                                 music();
                                 break;
+                            case Menu.Shop.POKECENTER:
+                                Console.ReadLine();
+                                music();
+                                break;
                             case Menu.Shop.HOMEPAGE:
                                 music();
                                 Menu.GetNextAction();
@@ -56,10 +60,15 @@ namespace Pokemonbonus
                         {
                             case Menu.Stat.MYPOKEMON:
                                 Trainer.MyPokemon();
+                                Console.ReadLine();
+                                Menu.GetStat();
                                 break;
                             case Menu.Stat.MYID:
                                 Trainer.WhoAmI();
                                 Trainer.Describe();
+                                Console.ReadLine();
+                                Menu.GetStat();
+                                
                                 break;
                             case Menu.Stat.HOMEPAGE:
                                 Menu.GetNextAction();
@@ -94,7 +103,7 @@ namespace Pokemonbonus
                                
                                 break;
                             case Menu.Option.RESTART:
-                                Index index = new Index();
+                                Console.Clear();
                                 Welcome();
                                 Getmyfirstpokemon();
                                 break;
@@ -115,6 +124,7 @@ namespace Pokemonbonus
             }
         }
 
+        
         public static void storemusic()
         {
             System.Media.SoundPlayer Music = new SoundPlayer();
@@ -154,6 +164,7 @@ namespace Pokemonbonus
 
             Index index = new Index();
             Console.Clear();
+            Console.WriteLine();
             Console.WriteLine("                     *Enter your name to start or exit*              ");
             Console.WriteLine();
             Console.WriteLine("            | Enter my name : 1");
@@ -204,13 +215,13 @@ namespace Pokemonbonus
             switch (myread)
             {
                 case "1":
-                    Index.GetPokemon(0);
+                    Trainer.CatchAPokemon(Index.GetPokemon(0));
                     break;
                 case "2":
-                    Index.GetPokemon(3);
+                    Trainer.CatchAPokemon(Index.GetPokemon(3));
                     break;
                 case "3":
-                    Index.GetPokemon(6);
+                    Trainer.CatchAPokemon(Index.GetPokemon(6));
                     break;
                 default:
                     myfirstpokemon();

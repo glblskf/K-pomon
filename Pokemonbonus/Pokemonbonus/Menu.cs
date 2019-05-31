@@ -6,7 +6,8 @@ namespace Pokemonbonus
     {
         public static void MainMenu()
         {
-            Console.WriteLine(@"""                                  ,'\
+            Console.WriteLine(@"""
+                                                              ,'\
                                 _.----.        ____         ,'  _\   ___    ___     ____
                             _,-'       `.     |    |  /`.   \,-'    |   \  /   |   |    \  |`.
                             \      __    \    '-.  | /   `.  ___    |    \/    |   '-.   \ |  |
@@ -49,7 +50,23 @@ namespace Pokemonbonus
         public enum Shop
         {
             SHOP,
+            POKECENTER,
             HOMEPAGE
+        }
+
+        public enum Fight
+        {
+            WILD,
+            TRAINER
+        }
+
+        public enum InFight
+        {
+            ATTACK,
+            CHANGE,
+            USEOBJECT,
+            CAPTURE,
+            RUNAWAY
         }
     
         public static Action GetNextAction()
@@ -142,7 +159,7 @@ namespace Pokemonbonus
             Console.WriteLine(               "                 ****************************************************************");
             Console.WriteLine(               "                 *                             *SHOP*                           *");
             Console.WriteLine(               "                 *                                                              *");
-            Console.WriteLine(               "                 *             | buy Pokeball : 1 | Homepage : 10 |             *");
+            Console.WriteLine(               "                 *     | buy Pokeball : 1 | Pokecenter : 2 | Homepage : 10 |    *");
             Console.WriteLine(               "                 *                                                              *");
             Console.WriteLine(               "                 ****************************************************************");
             
@@ -152,6 +169,8 @@ namespace Pokemonbonus
             {
                     case "1":
                         return Shop.SHOP;
+                    case "2":
+                        return Shop.POKECENTER;
                     case "10":
                         return Shop.HOMEPAGE;
                     default:
