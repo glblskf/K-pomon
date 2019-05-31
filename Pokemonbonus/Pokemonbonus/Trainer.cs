@@ -17,34 +17,28 @@ namespace Pokemonbonus
             _age = age;
         }
 
-        public static string Name => _name;
+        public string Name => _name;
 
-        public static int Age => _age;
+        public int Age => _age;
         
         public static void WhoAmI()
         {
             Console.WriteLine("      i am an Trainer !");
         }
 
-        public static void Describe()
-        {
-            Console.WriteLine();
-            Console.WriteLine("      My name is {0}, I'm {1} and have {2} Pokemon !", _name, _age, NumberOfPokemon());
+        public static void Describe(){
         }
 
-        public static int Age
-        {
-            get { return _age; }
-            set { _age = value; }
-        }
-
-        public static void Birthday()
+    public static void Birthday()
         {
             _age++;
         }
 
         public static int NumberOfPokemon()
         {
+            Console.WriteLine();
+            Console.WriteLine("      My name is {0}, I'm {1} and have {2} Pokemon !", _name, _age, NumberOfPokemon());
+        
             return _pokemons.Count;
         }
 

@@ -23,8 +23,8 @@ namespace Pokemonbonus
                     case Menu.Action.FIGHT:
                         //debut combat
                         combatmusic();
-                        new Combat(new Trainer(Trainer.Name, Trainer._age), new Trainer(rivalname, 10));
-
+                        Combat combat = new Combat(new Trainer(trainername, 10), new Trainer(rivalname, 10), true);
+                        combat.CombatLoop();
 
                         //fin combat et retour au menu
                         music();

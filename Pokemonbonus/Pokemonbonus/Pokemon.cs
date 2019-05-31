@@ -66,6 +66,11 @@ namespace Pokemonbonus
             }
         }
 
+        public void Attack(int index, Pokemon enemy)
+        {
+            _attacks[index].GetDamage(this, enemy);
+        }
+
         public void GetHurt(int damage)
         {
             _life -= damage;

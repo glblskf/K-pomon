@@ -21,10 +21,10 @@ namespace Pokemonbonus
 
         public  void CombatLoop()
         {
-            while (_player1.IsAlive() && _player2.IsAlive())
+            if (_player1.IsAlive() && _player2.IsAlive())
             {
-                PlayerTurn(_player1);
-                PlayerTurn(_player2);
+                PlayerTurn(_player1, _player2);
+                PlayerTurn(_player2, _player1);
                 Console.ReadLine();
             }
         }
@@ -50,7 +50,7 @@ namespace Pokemonbonus
             switch (choice)
             {
                 case 0:
-                    Attack(player, );
+                    Attack(player, opponent);
                     break;
                 case 1:
                     Bag();
@@ -74,7 +74,7 @@ namespace Pokemonbonus
                 Console.WriteLine(attack.Describe);
             }
             Console.Write(">> ");
-            player.GetSelectedPokemon()
+            player.GetSelectedPokemon().Attack(int.Parse(Console.ReadLine()), opponent.GetSelectedPokemon());
         }
 
         public void Bag()
