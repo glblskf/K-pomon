@@ -17,16 +17,16 @@ namespace Pokemonbonus
             _age = age;
         }
 
-        public string Name => _name;
+        public string fName => _name;
 
         public int Age => _age;
         
-        public static void WhoAmI()
+        public void WhoAmI()
         {
             Console.WriteLine("      i am an Trainer !");
         }
 
-        public static void Describe(){
+        public void Describe(){
             Console.WriteLine("      My name is {0}, I'm {1} and have {2} Pokemon !", _name, _age, NumberOfPokemon());
         }
 
@@ -47,7 +47,7 @@ namespace Pokemonbonus
             _pokemons.Add(pokemon);
         }
 
-        public static void MyPokemon()
+        public void MyPokemon()
         {
             int i = 0;
             Console.WriteLine();

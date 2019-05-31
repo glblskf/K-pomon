@@ -68,13 +68,13 @@ namespace Pokemonbonus
                         switch (mystat)
                         {
                             case Menu.Stat.MYPOKEMON:
-                                Trainer.MyPokemon();
+                                _trainer.MyPokemon();
                                 Console.ReadLine();
                                 Menu.GetStat();
                                 break;
                             case Menu.Stat.MYID:
-                                Trainer.WhoAmI();
-                                Trainer.Describe();
+                                _trainer.WhoAmI();
+                                _trainer.Describe();
                                 Console.ReadLine();
                                 Menu.GetStat();
                                 
