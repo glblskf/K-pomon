@@ -29,7 +29,7 @@ namespace Pokemonbonus
             }
         }
 
-        public void PlayerTurn(Trainer player)
+        public void PlayerTurn(Trainer player, Trainer opponent)
         {
             List<string> actions = new List<string>(){"Attaquer", "Sac", "Fuir", "Changer de pokemon"};
                 Console.WriteLine("=======|  TOUR DE {0}  |=======", player.Name);
@@ -50,7 +50,7 @@ namespace Pokemonbonus
             switch (choice)
             {
                 case 0:
-                    Attack(player);
+                    Attack(player, );
                     break;
                 case 1:
                     Bag();
@@ -66,13 +66,15 @@ namespace Pokemonbonus
             }
         }
 
-        public void Attack(Trainer player)
+        public void Attack(Trainer player, Trainer opponent)
         {
             Console.WriteLine("======|   ATTACK   |======");
             foreach (var attack in player.GetSelectedPokemon().Attacks)
             {
                 Console.WriteLine(attack.Describe);
             }
+            Console.Write(">> ");
+            player.GetSelectedPokemon()
         }
 
         public void Bag()

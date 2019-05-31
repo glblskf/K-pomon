@@ -17,6 +17,10 @@ namespace Pokemonbonus
             _age = age;
         }
 
+        public static string Name => _name;
+
+        public static int Age => _age;
+        
         public static void WhoAmI()
         {
             Console.WriteLine("      i am an Trainer !");
