@@ -17,9 +17,17 @@ namespace Pokemonbonus
             _age = age;
         }
 
-        public string fName => _name;
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
 
-        public int Age => _age;
+        public int Age
+        {
+            get { return _age; }
+            set { _age = value; }
+        }
         
         public void WhoAmI()
         {

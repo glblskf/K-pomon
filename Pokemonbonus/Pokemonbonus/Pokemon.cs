@@ -52,7 +52,11 @@ namespace Pokemonbonus
             Console.WriteLine("      My name is {0} I'm a pokemon of type {1} and I'm level {2}", _name, _type, _level);
         }
 
-        public string Name => _name;
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
         
 
         public void levelUp(int amount)
@@ -117,7 +121,10 @@ namespace Pokemonbonus
             get { return _type; }
         }
 
-        public List<Attack> Attacks => _attacks;
+        public List<Attack> Attacks
+        {
+            get { return _attacks; }
+        }
 
         public void GetPokemonCombatInfo()
         {
