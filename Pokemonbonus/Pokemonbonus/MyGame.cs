@@ -23,8 +23,7 @@ namespace Pokemonbonus
                     case Menu.Action.FIGHT:
                         //debut combat
                         combatmusic();
-
-                        Console.ReadLine();
+                        new Combat(new Trainer(Trainer.Name, Trainer._age), new Trainer(rivalname, 10));
 
 
                         //fin combat et retour au menu
@@ -156,7 +155,8 @@ namespace Pokemonbonus
         }
 
         public static string trainername;
-
+        public static string rivalname;
+        
         public static Trainer Starter()
         {
 
@@ -281,10 +281,11 @@ namespace Pokemonbonus
             Console.WriteLine("      Oak: -....Erm, what was his name now ?");
             Console.WriteLine();
             Console.Write("      > ");
-            string rivalname = Console.ReadLine();
+            string rival = Console.ReadLine();
+            rivalname = rival;
             Console.Clear();
             Console.WriteLine();
-            Console.WriteLine("      Oak: -That's right! I remember now !, his name is {0}!", rivalname);
+            Console.WriteLine("      Oak: -That's right! I remember now !, his name is {0}!", rival);
             Console.WriteLine("      Oak: -{0}!", trainername);
             Console.WriteLine("      Oak: -Your very own PoKeMoN legend is about to unfold!");
             Console.WriteLine();
