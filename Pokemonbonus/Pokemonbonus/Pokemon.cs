@@ -52,6 +52,9 @@ namespace Pokemonbonus
             Console.WriteLine("      My name is {0} I'm a pokemon of type {1} and I'm level {2}", _name, _type, _level);
         }
 
+        public string Name => _name;
+        
+
         public void levelUp(int amount)
         {
             _xp += amount;

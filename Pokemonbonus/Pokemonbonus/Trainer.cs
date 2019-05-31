@@ -57,7 +57,7 @@ namespace Pokemonbonus
             Console.WriteLine();
             while (i < _pokemons.Count)
             {
-                Console.WriteLine("> {0}", _pokemons[i]);
+                Console.WriteLine("> {0}",_name);
                 i++;
             }
         }
