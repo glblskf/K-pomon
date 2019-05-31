@@ -328,7 +328,7 @@ namespace Pokemonbonus
             
         }
 
-        public static Pokemon GetPokemon(int i)
+        public Pokemon GetPokemon(int i)
         {
             string name = pokeName[i];
             Dictionary<string, int> stat = pokeStat[i];

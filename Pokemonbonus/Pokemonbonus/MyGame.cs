@@ -5,11 +5,20 @@ using System.IO;
 using System.Media;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
+using Microsoft.SqlServer.Server;
 
 namespace Pokemonbonus
 {
     public class MyGame
     {
+        private static Trainer _trainer;
+        private static Trainer _opponent;
+        private static Index _index = new Index();
+
+        public static Trainer Trainer => _trainer;
+        public static Trainer Opponent => _opponent;
+        public static Index Index => _index;
+
         public static void Updates()
         {
             bool end = false;
@@ -23,7 +32,8 @@ namespace Pokemonbonus
                     case Menu.Action.FIGHT:
                         //debut combat
                         combatmusic();
-                        Combat combat = new Combat(new Trainer(trainername, 10), new Trainer(rivalname, 10), true);
+                        MyGame.Trainer.CatchAPokemon(new Index().GetPokemon(0));
+                        Combat combat = new Combat(MyGame.Trainer, MyGame.Opponent, true);
                         combat.CombatLoop();
 
                         //fin combat et retour au menu
@@ -154,10 +164,7 @@ namespace Pokemonbonus
             Menu.MainMenu();
         }
 
-        public static string trainername;
-        public static string rivalname;
-        
-        public static Trainer Starter()
+        public static void Starter()
         {
 
             Trainer trainer1 = new Trainer("", 0);
@@ -189,9 +196,7 @@ namespace Pokemonbonus
                     Console.Write("      > ");
                     int age = int.Parse(Console.ReadLine());
                     Console.Clear();
-                    Trainer _trainer = new Trainer(name, age);
-                    trainername = name;
-                    trainer1 = _trainer;
+                    _trainer = new Trainer(name, age);
                     break;
                 case "2":
                     Console.WriteLine("GAME: goodbye my friend !");
@@ -200,8 +205,6 @@ namespace Pokemonbonus
                     Starter();
                     break;
             }
-
-            return trainer1;
         }
 
         public static void myfirstpokemon()
@@ -215,13 +218,16 @@ namespace Pokemonbonus
             switch (myread)
             {
                 case "1":
-                    Trainer.CatchAPokemon(Index.GetPokemon(0));
+                    _trainer.CatchAPokemon(_index.GetPokemon(0));
+                    _opponent.CatchAPokemon(_index.GetPokemon(3));
                     break;
                 case "2":
-                    Trainer.CatchAPokemon(Index.GetPokemon(3));
+                    _trainer.CatchAPokemon(_index.GetPokemon(3));
+                    _opponent.CatchAPokemon(_index.GetPokemon(6));
                     break;
                 case "3":
-                    Trainer.CatchAPokemon(Index.GetPokemon(6));
+                    _trainer.CatchAPokemon(_index.GetPokemon(6));
+                    _opponent.CatchAPokemon(_index.GetPokemon(0));
                     break;
                 default:
                     myfirstpokemon();
@@ -280,13 +286,12 @@ namespace Pokemonbonus
             Console.Clear();
             Console.WriteLine("      Oak: -....Erm, what was his name now ?");
             Console.WriteLine();
-            Console.Write("      > ");
-            string rival = Console.ReadLine();
-            rivalname = rival;
+            Console.Write("      > "); 
+            _opponent = new Trainer(Console.ReadLine(), _trainer.Age);
             Console.Clear();
             Console.WriteLine();
-            Console.WriteLine("      Oak: -That's right! I remember now !, his name is {0}!", rival);
-            Console.WriteLine("      Oak: -{0}!", trainername);
+            Console.WriteLine("      Oak: -That's right! I remember now !, his name is {0}!", _opponent.Name);
+            Console.WriteLine("      Oak: -{0}!", _trainer.Name);
             Console.WriteLine("      Oak: -Your very own PoKeMoN legend is about to unfold!");
             Console.WriteLine();
             Console.WriteLine("                                                  <-/");

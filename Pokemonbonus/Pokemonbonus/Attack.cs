@@ -49,7 +49,10 @@ namespace Pokemonbonus
             defendant.GetHurt((int) damage);
         }
 
-        public string Describe => _description;
+        public void Describe()
+        {
+            Console.WriteLine(" - {0} : {1}", _name, _description);
+        }
 
         public float GetMultiplier(Poketype enemyType)
         {

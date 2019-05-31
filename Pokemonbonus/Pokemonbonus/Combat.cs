@@ -32,11 +32,13 @@ namespace Pokemonbonus
         public void PlayerTurn(Trainer player, Trainer opponent)
         {
             List<string> actions = new List<string>(){"Attaquer", "Sac", "Fuir", "Changer de pokemon"};
-                Console.WriteLine("=======|  TOUR DE {0}  |=======", player.Name);
+            Console.WriteLine("=======|  TOUR DE {0}  |=======", player.Name); 
+            Console.WriteLine("YOUR POKEMON : {0}", player.GetSelectedPokemon().Name);
+            Console.WriteLine("{0}'S POKEMON : {1}", opponent.Name, opponent.GetSelectedPokemon().Name);
             Console.WriteLine("Choisissez une action :");
             for (int i = 0; i < actions.Count; i++)
             {
-                Console.WriteLine("  {0}- {1}", i+1, actions);
+                Console.WriteLine("  {0}- {1}", i+1, actions[i]);
             }
 
             int choice;
@@ -44,7 +46,7 @@ namespace Pokemonbonus
             {
                 Console.Write(">> ");
                 choice = int.Parse(Console.ReadLine()) - 1;
-            } while (choice >= 0 && choice < actions.Count);
+            } while (!(choice >= 0 && choice < actions.Count));
             Console.WriteLine(choice);
 
             switch (choice)
@@ -71,10 +73,10 @@ namespace Pokemonbonus
             Console.WriteLine("======|   ATTACK   |======");
             foreach (var attack in player.GetSelectedPokemon().Attacks)
             {
-                Console.WriteLine(attack.Describe);
+                attack.Describe();
             }
             Console.Write(">> ");
-            player.GetSelectedPokemon().Attack(int.Parse(Console.ReadLine()), opponent.GetSelectedPokemon());
+            player.GetSelectedPokemon().Attack(int.Parse(Console.ReadLine()) - 1, opponent.GetSelectedPokemon());
         }
 
         public void Bag()

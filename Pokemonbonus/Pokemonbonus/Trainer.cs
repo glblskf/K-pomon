@@ -27,22 +27,22 @@ namespace Pokemonbonus
         }
 
         public static void Describe(){
+            Console.WriteLine("      My name is {0}, I'm {1} and have {2} Pokemon !", _name, _age, NumberOfPokemon());
         }
 
-    public static void Birthday()
+        public void Birthday()
         {
             _age++;
         }
 
-        public static int NumberOfPokemon()
+        public int NumberOfPokemon()
         {
             Console.WriteLine();
-            Console.WriteLine("      My name is {0}, I'm {1} and have {2} Pokemon !", _name, _age, NumberOfPokemon());
-        
+
             return _pokemons.Count;
         }
 
-        public static void CatchAPokemon(Pokemon pokemon)
+        public void CatchAPokemon(Pokemon pokemon)
         {
             _pokemons.Add(pokemon);
         }
