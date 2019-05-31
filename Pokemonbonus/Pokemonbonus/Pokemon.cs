@@ -107,5 +107,7 @@ namespace Pokemonbonus
         {
             get { return _type; }
         }
+
+        public List<Attack> Attacks => _attacks;
     }
 }

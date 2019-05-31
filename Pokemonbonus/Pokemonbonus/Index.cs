@@ -14,6 +14,7 @@ namespace Pokemonbonus
         private string SPE = "SPECIAL";
         private static List<Dictionary<string, int>> pokeStat;
         private static List<string> pokeName;
+        private static List<Attack> pokeAttack;
         public Index()
         {
             pokeStat = new List<Dictionary<string, int>>();   
@@ -200,7 +201,6 @@ namespace Pokemonbonus
             pokeName.Add("Sandslash");
             pokeName.Add("Nidoran(f)");
             pokeName.Add("Nidorina");
-            pokeName.Add("Nirorina");
             pokeName.Add("Nidoqueen");
             pokeName.Add("Nidoran(m)");
             pokeName.Add("Nidorino");
@@ -322,6 +322,10 @@ namespace Pokemonbonus
             pokeName.Add("Dragonite");
             pokeName.Add("Mewtow");
             pokeName.Add("Mew");
+            
+            pokeAttack = new List<Attack>();
+            pokeAttack.Add(new Attack("Cut", "A usefull combat attack", Attack.Poketype.NORMAL, 10));
+            
         }
 
         public static Pokemon GetPokemon(int i)
@@ -329,7 +333,7 @@ namespace Pokemonbonus
             string name = pokeName[i];
             Dictionary<string, int> stat = pokeStat[i];
             List<Attack.Poketype> types = new List<Attack.Poketype>();
-            List<Attack> atks = new List<Attack>();
+            List<Attack> atks = new List<Attack>(){pokeAttack[0]};
             return new Pokemon(name, stat, types, atks);
         }
     }

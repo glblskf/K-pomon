@@ -48,16 +48,8 @@ namespace Pokemonbonus
             float damage = ((float) ((2 * attacker.Level + 10) / 250 * attacker.Force / defendant.Defence * _damage) + 2) * mult;
             defendant.GetHurt((int) damage);
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+        public string Describe => _description;
 
         public float GetMultiplier(Poketype enemyType)
         {
