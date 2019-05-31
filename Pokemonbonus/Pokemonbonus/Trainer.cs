@@ -5,10 +5,10 @@ namespace Pokemonbonus
 {
     public class Trainer : Animal
     {
-        private static string _name;
-        private static int _age;
-        private static List<Pokemon> _pokemons = new List<Pokemon>();
-        private static int _selected = 0;
+        private string _name;
+        private int _age;
+        private List<Pokemon> _pokemons = new List<Pokemon>();
+        private int _selected = 0;
 
         public Trainer(string name, int age)
             : base(name)

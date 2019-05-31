@@ -46,7 +46,6 @@ namespace Pokemonbonus
                     case Menu.Action.FIGHT:
                         //debut combat
                         combatmusic();
-                        MyGame.Trainer.CatchAPokemon(MyGame.Index.GetPokemon(0));
                         Combat combat = new Combat(MyGame.Trainer, MyGame.Opponent, true);
                         combat.CombatLoop();
 
@@ -180,7 +179,6 @@ namespace Pokemonbonus
 
         public static void Starter()
         {
-
             Console.Clear();
             Console.WriteLine();
             Console.WriteLine("                     *Enter your name to start or exit*              ");
@@ -301,7 +299,7 @@ namespace Pokemonbonus
             Console.Clear();
             Console.WriteLine("      Oak: -....Erm, what was his name now ?");
             Console.WriteLine();
-            Console.Write("      > "); 
+            Console.Write("      > ");
             _opponent = new Trainer(Console.ReadLine(), _trainer.Age);
             Console.Clear();
             Console.WriteLine();
