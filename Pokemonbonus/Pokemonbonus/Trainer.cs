@@ -71,7 +71,7 @@ namespace Pokemonbonus
             return true;
         }
 
-        public static void Select()
+        public void Select()
         {
             do
             {
@@ -86,7 +86,7 @@ namespace Pokemonbonus
             } while (_selected < 0 || _selected >= _pokemons.Count);
         }
 
-        public static Pokemon GetSelectedPokemon()
+        public Pokemon GetSelectedPokemon()
         {
             return _pokemons[_selected];
         }

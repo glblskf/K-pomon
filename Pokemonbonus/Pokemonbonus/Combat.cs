@@ -46,6 +46,48 @@ namespace Pokemonbonus
                 choice = int.Parse(Console.ReadLine()) - 1;
             } while (choice >= 0 && choice < actions.Count);
             Console.WriteLine(choice);
+
+            switch (choice)
+            {
+                case 0:
+                    Attack(player);
+                    break;
+                case 1:
+                    Bag();
+                    break;
+                case 2:
+                    Flee();
+                    break;
+                case 3:
+                    ChangePokemon();
+                    break;
+                default:
+                    throw new Exception();
+            }
+        }
+
+        public void Attack(Trainer player)
+        {
+            Console.WriteLine("======|   ATTACK   |======");
+            foreach (var attack in player.GetSelectedPokemon().Attacks)
+            {
+                Console.WriteLine(attack.Describe);
+            }
+        }
+
+        public void Bag()
+        {
+            
+        }
+
+        public void Flee()
+        {
+            
+        }
+
+        public void ChangePokemon()
+        {
+            
         }
     }
 }
