@@ -324,7 +324,7 @@ namespace Pokemonbonus
             pokeName.Add("Mew");
             
             pokeAttack = new List<Attack>();
-            pokeAttack.Add(new Attack("Cut", "A usefull combat attack", Attack.Poketype.NORMAL, 10));
+            pokeAttack.Add(new Attack("Cut", "A useful combat attack", Attack.Poketype.NORMAL, 10));
             
         }
 
@@ -332,7 +332,7 @@ namespace Pokemonbonus
         {
             string name = pokeName[i];
             Dictionary<string, int> stat = pokeStat[i];
-            List<Attack.Poketype> types = new List<Attack.Poketype>();
+            List<Attack.Poketype> types = new List<Attack.Poketype>(){Attack.Poketype.NORMAL};
             List<Attack> atks = new List<Attack>(){pokeAttack[0]};
             return new Pokemon(name, stat, types, atks);
         }

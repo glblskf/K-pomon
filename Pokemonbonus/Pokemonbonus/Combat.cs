@@ -81,7 +81,8 @@ namespace Pokemonbonus
                 attack.Describe();
             }
             Console.Write(">> ");
-            player.GetSelectedPokemon().Attack(int.Parse(Console.ReadLine()) - 1, opponent.GetSelectedPokemon());
+            string selected = Console.ReadLine();
+            player.GetSelectedPokemon().Attack(int.Parse(selected) - 1, opponent.GetSelectedPokemon());
         }
 
         public void Bag()
