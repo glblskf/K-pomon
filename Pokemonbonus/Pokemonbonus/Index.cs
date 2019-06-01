@@ -335,7 +335,7 @@ namespace Pokemonbonus
         {
             string name = pokeName[i];
             Dictionary<string, int> stat = pokeStat[i];
-            List<Attack> atks = new List<Attack>(){pokeAttack[0]};
+            List<Attack> atks = new List<Attack>(){pokeAttack[0], pokeAttack[1]};
             return new Pokemon(name, stat, atks);
         }
     }
