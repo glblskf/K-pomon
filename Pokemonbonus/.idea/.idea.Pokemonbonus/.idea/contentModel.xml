@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\yaelm\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\yaelm\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Pokemonbonus.812943569.00" t="ExcludeRecursive" />
-    <e p="C:\Users\yaelm\OneDrive\Documents\GitHub\K-pomon\Pokemonbonus" t="IncludeFlat">
+    <e p="C:\Users\etien\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\etien\.Rider2018.2\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\etien\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\etien\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Pokemonbonus.-2014673645.00" t="ExcludeRecursive" />
+    <e p="C:\Users\etien\Desktop\K-pomon\Pokemonbonus" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Pokemonbonus" t="IncludeRecursive">
         <e p="Animal.cs" t="Include" />

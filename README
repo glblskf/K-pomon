@@ -1,24 +1,53 @@
-=-------------={   PARTIE OBLIGATOIRE   }=-------------=
+﻿		=-------------={   PARTIE OBLIGATOIRE   }=-------------=
 
-Ce TP etais vraiement sympa et je n'ai pas eu beaucoup de difficultés
+Tp assez facile, pas grand chose à redire de ma part, je trouve qu'il n'est pas vraiment représentatif de l'orienté objet.
 
-=-------------={SUPER DUAL POKEMON BONUS}=-------------=
+		=-------------={SUPER DUAL POKEMON BONUS}=-------------=
 
-<DESCRIPTION DU BONUS> 
-/!\ Ce projet a été fait en collaboration avec Etienne Lazarz avec l'autorisation de nos super ACDC
+	<DESCRIPTION DU BONUS> 
+/!\ Ce projet a été fait en collaboration avec Yael Magnier avec l'autorisation de nos super ACDC
 Ce bonus consiste en un jeu pokemon fonctionnel.
 Voici une liste des fonctionnalitées de ce jeu:
 
-<Etienne>
-Un bel affichage
-Le début du jeu
-Menu complet
+	<Etienne>
 
-<Yael>
-Combat    (sans effets)
+Un bel affichage : class MyGame
+Le début du jeu: dialogue initial avec création du personage joueur et enemi.
+Menu complet : class Menu
+
+	<Yael>
+
+Combat: class Combat et Attack    (sans effets)
 Soin
 
-<Commun>
-Vraies stats pour pokemon
-Gen 1
+	<Commun>
+
+class : Animal, Pokemon et trainer (modifications faites par yael)
+Vraies stats pour pokemon: class Index
+Gen 1 (151 pokemon)
+
+	<Non Fonctionnel mais implémenté>
+
+Menu Shop
+Attaque spéciale, et statistique
+
+	<have a break, have a coffe>
+
+         {
+      {   }
+       }_{ __{
+    .-{   }   }-.
+   (   }     {   )
+   |`-.._____..-'|
+   |             ;--.
+   |            (__  \
+   |             | )  )
+   |             |/  /
+   |             /  /   
+   |            (  /
+   \             y'
+    `-.._____..-'
+
+
+
 
