@@ -60,12 +60,12 @@ namespace Pokemonbonus
                             combat = new Combat(MyGame.Trainer, MyGame.Opponent, false);
                         }
                         
-                        combatmusic();
+                        //combatmusic();
                         
                         bool isWon = combat.CombatLoop();
 
                         //fin combat et retour au menu
-                        music();
+                        //music();
                         if (!isWon)
                         {
                             Console.WriteLine("{0} scurried to a pokemon center, \nprotecting the exhausted and fainted pokemon from further harm", Trainer.Name);
@@ -74,23 +74,23 @@ namespace Pokemonbonus
                         break;
 
                     case Menu.Action.SHOP:
-                        storemusic();
+                        //storemusic();
                         Menu.Shop myshop = Menu.Getshop();
 
                         switch (myshop)
                         {
                             case Menu.Shop.SHOP:
                                 Console.ReadLine();
-                                music();
+                               // music();
                                 break;
                             case Menu.Shop.POKECENTER:
                                 _trainer.Heal();
                                 Console.WriteLine("Your pokemons have been healed");
                                 Console.ReadLine();
-                                music();
+                               // music();
                                 break;
                             case Menu.Shop.HOMEPAGE:
-                                music();
+                                //music();
                                 Menu.GetNextAction();
                                 break;
                         }
@@ -195,7 +195,7 @@ namespace Pokemonbonus
 
         public static void Welcome()
         {
-            music();
+            //music();
             Menu.MainMenu();
         }
 

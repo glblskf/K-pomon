@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace Pokemonbonus
 {
@@ -58,7 +59,9 @@ namespace Pokemonbonus
         {
             Console.Clear();
             List<string> actions = new List<string>(){"Attaquer", "Sac", "Fuir", "Changer de pokemon"};
+            Console.WriteLine();
             Console.WriteLine("      =======|  TOUR DE {0}  |=======", player.Name);
+            Console.WriteLine();
             
             Console.Write("{0}'s pokemon: ", player.Name);
             player.GetSelectedPokemon().GetPokemonCombatInfo();
@@ -66,6 +69,7 @@ namespace Pokemonbonus
             Console.Write("{0}'s pokemon: ", opponent.Name); 
             opponent.GetSelectedPokemon().GetPokemonCombatInfo();
 
+            Console.WriteLine();
             Console.WriteLine("Choisissez une action :");
             for (int i = 0; i < actions.Count; i++)
             {
@@ -104,10 +108,14 @@ namespace Pokemonbonus
             Console.Clear();
             Console.WriteLine();
             Console.WriteLine("      ======|   ATTACK   |======");
+            Console.WriteLine();
             foreach (var attack in player.GetSelectedPokemon().Attacks)
             {
                 attack.Describe();
             }
+            Console.WriteLine();
+            Console.WriteLine("    press 1 to continue...");
+            Console.WriteLine();
             Console.Write(">> ");
             string selected = Console.ReadLine();
             player.GetSelectedPokemon().Attack(int.Parse(selected) - 1, opponent.GetSelectedPokemon());
@@ -118,6 +126,9 @@ namespace Pokemonbonus
             Console.Clear();
             Console.WriteLine();
             Console.WriteLine("      =======|   BAG   |=======");
+            Console.WriteLine();
+            Console.WriteLine("                                                  <-/");
+            Console.ReadLine();  
         }
 
         public void Flee()
@@ -127,6 +138,10 @@ namespace Pokemonbonus
             
             Console.WriteLine("      =======|   FLEE   |=======");
             Console.WriteLine("you ran over from your opponent !");
+            Console.WriteLine();
+            Console.WriteLine("                                                  <-/");
+            Console.ReadLine();
+            Menu.GetNextAction();
         }
 
         public void ChangePokemon(Trainer player)
