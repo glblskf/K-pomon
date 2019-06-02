@@ -60,10 +60,10 @@ namespace Pokemonbonus
             List<string> actions = new List<string>(){"Attaquer", "Sac", "Fuir", "Changer de pokemon"};
             Console.WriteLine("      =======|  TOUR DE {0}  |=======", player.Name);
             
-            Console.Write("{0}'s pokemon", player.Name);
+            Console.Write("{0}'s pokemon: ", player.Name);
             player.GetSelectedPokemon().GetPokemonCombatInfo();
             
-            Console.Write("{0}'s pokemon", opponent.Name); 
+            Console.Write("{0}'s pokemon: ", opponent.Name); 
             opponent.GetSelectedPokemon().GetPokemonCombatInfo();
 
             Console.WriteLine("Choisissez une action :");
@@ -118,7 +118,6 @@ namespace Pokemonbonus
             Console.Clear();
             Console.WriteLine();
             Console.WriteLine("      =======|   BAG   |=======");
-            
         }
 
         public void Flee()

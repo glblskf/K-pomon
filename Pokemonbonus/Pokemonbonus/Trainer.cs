@@ -9,6 +9,8 @@ namespace Pokemonbonus
         private int _age;
         private List<Pokemon> _pokemons = new List<Pokemon>();
         private int _selected = 0;
+        private int pokeballs = 0;
+        private int money = 1500;
 
         public Trainer(string name, int age)
             : base(name)

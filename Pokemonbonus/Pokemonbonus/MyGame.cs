@@ -45,8 +45,23 @@ namespace Pokemonbonus
                 {
                     case Menu.Action.FIGHT:
                         //debut combat
+
+                        Menu.Fight fight = Menu.GetFight();
+
+                        Combat combat;
+                        if (fight == Menu.Fight.WILD)
+                        {
+                            Trainer wild = new Trainer("Wild pokemon" , 0);
+                            wild.CatchAPokemon(_index.GetRandomPokemon());
+                            combat = new Combat(Trainer, wild, true );
+                        }
+                        else
+                        {
+                            combat = new Combat(MyGame.Trainer, MyGame.Opponent, false);
+                        }
+                        
                         combatmusic();
-                        Combat combat = new Combat(MyGame.Trainer, MyGame.Opponent, true);
+                        
                         bool isWon = combat.CombatLoop();
 
                         //fin combat et retour au menu
@@ -69,6 +84,8 @@ namespace Pokemonbonus
                                 music();
                                 break;
                             case Menu.Shop.POKECENTER:
+                                _trainer.Heal();
+                                Console.WriteLine("Your pokemons have been healed");
                                 Console.ReadLine();
                                 music();
                                 break;

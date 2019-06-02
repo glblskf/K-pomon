@@ -338,5 +338,13 @@ namespace Pokemonbonus
             List<Attack> atks = new List<Attack>(){pokeAttack[0], pokeAttack[1]};
             return new Pokemon(name, stat, atks);
         }
+
+
+        public Pokemon GetRandomPokemon()
+        {
+            Random r = new Random();
+            int i = r.Next(pokeName.Count());
+            return new Pokemon(pokeName[i], pokeStat[i], new List<Attack> {pokeAttack[0]});
+        }
     }
 }
